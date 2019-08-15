@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Index</title>
+<style>
+body {
+  background-color: #343a40;
+}
+
+.card {
+  width: 350px;
+  margin-top: 5px;
+  
+
+}
+.tblItems {
+  max-width: 350px;
+  max-height: auto;
+}
+
+.modalImgCSS {
+  height: 800px;
+  width: 800px;
+}
+
+.modal-dialog {
+  vertical-align: center;
+ 
+}
+.modal-body{
+  padding: 0;
+}
+.modal-content {
+  background-color: white;
+  border: 0px;
+ 
+}
+
+.video {
+  width: 350px;
+  height: 300px;
+}
+
+.pdf {
+  width: 330px;
+  height: 300px;
+}
+
+.card-body {
+  width: 340px;
+  height: auto;
+}
+.pdfButton {
+  display: block;
+  position: relative;
+  width: 350px;
+}
+
+.set {
+  width: 30px;
+  height: 30px;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.alert {
+  margin-bottom: 0px;
+  padding: 6px 12px 6px 12px;
+}
+
+</style>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+
+$(document).ready(function() {
+  $('#all').prop("disabled", false);
+  $('#selected').prop("disabled", false);
+  $('#submit').prop("disabled", false);
+  $('#sheets').prop("disabled", true);
+  console.log("clicked sheet button !!!")
+
+  $.get($SCRIPT_ROOT + '/sheets', function(response){
+    console.log("spreadsheet data", response);
+  });
+});
+$(document).on('click', '#selected', function() {
+  var selected = []
+  $('.set:checked').each(function() {
+      selected.push($(this).attr('value'));
+  });
+  $('#all').prop("disabled", false);
+  $('#selected').prop("disabled", true);
+  $('#submit').prop("disabled", false);
+  $('#sheets').prop("disabled", false);
+  $.get($SCRIPT_ROOT + '/selected', {
+    rows: JSON.stringify(selected)
+  }, function(data) {
+    $("#table").html(data.result);
+  });
+});
+
+$(document).on('click', '#all', function() {
+  $('#all').prop("disabled", true);
+  $('#selected').prop("disabled", false);
+  $('#submit').prop("disabled", true);
+  $('#sheets').prop("disabled", false);
+  $.get($SCRIPT_ROOT + '/all', {
+  }, function(data) {
+    $("#table").html(data.result);
+  });
+});
+
+$(document).on('click', '.modalImg', function() {
+  $(".modal-body").html($(this).html())
+  $(".modal-body img").removeClass("tblItems");
+  $(".modal-body img").addClass("modalImgCSS");
+});
+
+$(document).on('click', '.modalImgCSS', function() {
+  $('#selectedImg').modal('toggle')
+});
+
+$(document).on('click', '#submit', function() {
+  var choices = [];
+  var favs = [];
+  token = $('#token').val();
+  $('.set').each(function() {
+      choices.push($(this).attr('value'));
+  });
+  $('.set:checked').each(function() {
+      favs.push($(this).attr('value'));
+  });
+  $.get($SCRIPT_ROOT + '/submit', {
+    choices: JSON.stringify(choices),
+    favs: JSON.stringify(favs),
+    token: token
+  }, function(data) {
+    $("#notif").html(data.result);
+  });
+});
+
+</script>
+{% endblock %}
+
+{% block navItemsLeft %}
+
+<li>
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <button class="btn btn-primary active" id="all" disabled>
+      <input type="radio" name="options" autocomplete="off"> All
+    </button>
+    <button class="btn btn-primary" id="selected">
+      <input type="radio" name="options" autocomplete="off"> Selected
+    </button>
+    <!-- <button class="btn btn-primary" id="sheet">
+      <input type="radio" name="options" autocomplete="off"> Sheets
+    </button> -->
+  </div>
+</li>
+
+{% endblock %}
+
+{% block navItemsRight %}
+<li id="notif">
+  <!-- -->
+</li>
+<li>
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Please insert your ID token" aria-label="token" aria-describedby="token" id="token" required>
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button" id="submit" disabled>Submit</button>
+    </div>
+  </div>
+</li>
+
+{% endblock %}
+
+{% block body %}
+
+<table class="table table-secondary">
+  <tbody id="table">
+    {% for item in data %}
+    <tr id="row">
+      {% if 'audrey' not in item['first']  and 'Test' not in item['first'] and 'First' not in item['first'] %}
+      <td id="checkbox">
+          <input type="checkbox" class="center set" value="{{(item['first'], item['last'])}}">
+      </td>
+      {% for element in item['sample'] %}
+      <td id="col">
+        <div>
+          {% if 'drive.google.com' in element['image'] and element['image'] != "" %}
+          <!-- <img class="tblItems" src="static/Moon.jpg" alt="Card image cap"> -->
+          <!-- <iframe class="tblItems video" src="static/Moon.jpg" frameborder="0" allow="encrypted-media" allowfullscreen></iframe> -->
+          <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
+            <img class="tblItems" src="static/Moon.jpg " alt="Card image cap">
+        </button>
+          <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">Click here to view google drive link</a>
+          {% endif %}
+          {% if element['video'] != "" and 'youtube' in element['video'] or 'vimeo' in element['video']%}
+          <iframe class="tblItems video" src="{{ element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+          <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">Click to view on website </a>
+          {% endif %}
+          {% if 'open.spotify.com' in element['video'] and element['video'] != "" %}
+          <iframe class="tblItems video" src="{{element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+          <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">  Spotify </a>
+          {% endif %}
+          {% if '.png' in element['image'] or '.jpg' in element['image'] or '.jpeg' in element['image'] %}
+          <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
+              <img class="tblItems" src="https://homepages.cae.wisc.edu/~ece533/images/pool.png " alt="Card image cap">
+          </button>
+          {% endif %}
+        </div>
+        <div class="card" >
+          <div class="card-body">
+            <h5 class="card-title">Artwork Description</h5>
+            <p class="card-text">{{element['desc']}}</p>
+          </div>
+        </div> 
+      </td>
+      {% endfor %}
+      {% endif %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="modal fade" id="selectedImg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="false">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <!-- Generated by Jquery for each image -->
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -132,6 +132,12 @@ def sheets():
 
   service = build('sheets', 'v4', credentials=creds)
 
+  #construct urls of pdf and jpgs 
+  this_dir, this_filename = os.path.split(__file__)
+  directory_one = os.path.join(this_dir, "static/Sample_one")
+  directory_two = os.path.join(this_dir, "static/Sample_two")
+  directory_three = os.path.join(this_dir, "static/Sample_three")
+  
   # Call the Sheets API
   sheet = service.spreadsheets()
   result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
@@ -178,8 +184,40 @@ def sheets():
                           {"image": element[29], "video": element[30], "desc": element[31]}
                           ]
                   }
+
+    internFirstName = sheetDict['first'] + " " + sheetDict['last']
+    print("intern name ", internName)
+    for item in os.listdir(directory_one):
+      file = re.search("(\w+ *\S*)(?=\.).(png|jpg|pdf|PNG|JPG|PDF)", item)
+      if file is not None:
+          name = file.group(1)
+          type = file.group(2)
+          print (" dir one names", name)
+          if "pdf" in type.lower() or "png" in type.lower() or "jpg" in type.lower():
+            if name.lower() == internName.lower():
+              sheetDict['sample'][0]['image'] = "/static/Sample_one/" + item
+    
+    for item in os.listdir(directory_two):
+      file = re.search("(\w+ *\S*)(?=\.).(png|jpg|pdf|PNG|JPG|PDF)", item)
+      if file is not None:
+          name = file.group(1)
+          type = file.group(2)
+          if "pdf" in type.lower() or "png" in type.lower() or "jpg" in type.lower():
+            if name.lower() == internName.lower():
+              sheetDict['sample'][1]['image'] = "/static/Sample_two/" + item
+    
+    for item in os.listdir(directory_three):
+      file = re.search("(\w+ *\S*)(?=\.).(png|jpg|pdf|PNG|JPG|PDF)", item)
+      if file is not None:
+          name = file.group(1)
+          type = file.group(2)
+          if "pdf" in type.lower() or "png" in type.lower() or "jpg" in type.lower():
+            if name.lower() == internName.lower():
+              sheetDict['sample'][2]['image'] = "/static/Sample_three/" + item
+          
+
     array.append(sheetDict)
-      
+    # print(" sheetdict", sheetDict)
     with open('static/jsonData.json', 'w') as file:
       file.write(json.dumps(array, sort_keys = True, indent = 4, separators = None))
   

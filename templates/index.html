@@ -197,9 +197,9 @@ $(document).on('click', '#submit', function() {
           {% if 'drive.google.com' in element['image'] and element['image'] != "" %}
           <!-- <img class="tblItems" src="static/Moon.jpg" alt="Card image cap"> -->
           <!-- <iframe class="tblItems video" src="static/Moon.jpg" frameborder="0" allow="encrypted-media" allowfullscreen></iframe> -->
-          <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
-            <img class="tblItems" src="static/Moon.jpg " alt="Card image cap">
-        </button>
+          <!-- <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
+            <img class="tblItems" src="{{element['image']}}" alt="Card image cap">
+        </button> -->
           <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">Click here to view google drive link</a>
           {% endif %}
           {% if element['video'] != "" and 'youtube' in element['video'] or 'vimeo' in element['video']%}
@@ -210,10 +210,15 @@ $(document).on('click', '#submit', function() {
           <iframe class="tblItems video" src="{{element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
           <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">  Spotify </a>
           {% endif %}
-          {% if '.png' in element['image'] or '.jpg' in element['image'] or '.jpeg' in element['image'] %}
+          {% if '.png' in element['image'] or '.jpg' in element['image'] or '.JPG' in element['image'] %}
           <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
-              <img class="tblItems" src="https://homepages.cae.wisc.edu/~ece533/images/pool.png " alt="Card image cap">
+              <img class="tblItems" src="{{element['image']}}" alt="Card image cap">
           </button>
+          <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a>
+          {% endif %}
+          {% if '.pdf' in element['image'] or '.PDF' in element['image'] %}
+          <embed class="tblItems pdf" src="{{element['image']}}">
+          <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a>
           {% endif %}
         </div>
         <div class="card" >

@@ -84,33 +84,28 @@ def all():
 
 @app.route('/submit')
 def submit():
-    choices = json.loads(request.args.get('choices'))
+    # choices = json.loads(request.args.get('choices'))
     favs = json.loads(request.args.get('favs'))
     token = request.args.get('token')
     tokens = json.load(open(os.path.join(app.root_path, "static", "tokens.json")))
+    submission = {}
     if token in tokens:
-        '''
-        print("CHOICES:\t" + str(choices))
-        print("FAVS:\t\t" + str(favs))
-        print("TOKEN:\t\t" + str(token))
-        '''
-        submission = '{"%s":{"choices":%s,"favourites":%s}}\n' % (str(token), json.dumps(choices), json.dumps(favs))
-        with open(os.path.join(app.root_path, "static", "submissions.json"), "a") as file:
-            file.write(submission)
-        return jsonify(result=notif.render(type="success", code="Success: ", message="Submission was recieved."))
+      submission.update({str(token) : json.dumps(favs)})
+        # submission = '{"%s":{"favourites":%s}}\n' % (str(token), json.dumps(favs))
+      with open(os.path.join(app.root_path, "static", "submissions.json"), "a") as file:
+          file.write(json.dumps(submission, sort_keys = True, indent = 4, separators = None))
+      return jsonify(result=notif.render(type="success", code="Success: ", message="Submission was recieved."))
     elif token == "":
-        return jsonify(result=notif.render(type="warning", code="Warning: ", message="Missing Token."))
+      return jsonify(result=notif.render(type="warning", code="Warning: ", message="Missing Token."))
     else:
-        return jsonify(result=notif.render(type="danger", code="Error: ", message="Invalid token."))
+      return jsonify(result=notif.render(type="danger", code="Error: ", message="Invalid token."))
 
 
 @app.route('/sheets')
 def sheets():
-  this_dir, this_filename = os.path.split(__file__)
-  print(this_dir, this_filename)
   SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 
-  SAMPLE_SPREADSHEET_ID = '1WZ23nDoEUjN4AecudlOLGqs6R5oGmaEiv2xy8YA7j8M'
+  SAMPLE_SPREADSHEET_ID = '1ARPAEK5IHN6o5PEy2KXQzMbDFRqEEYaViv_nTVswEkU'
   SAMPLE_RANGE_NAME = 'Form Responses 1'
 
   creds = None
@@ -148,6 +143,7 @@ def sheets():
   response["sheetdata"] = values
   array = []
   
+  internNameList = []
   for element in response["sheetdata"]:
     if "//vimeo.com" in element[24] or "//vimeo.com" in element[27] or "//vimeo.com" in element[30]:
         element[24] = element[24].replace("//vimeo.com/", "//player.vimeo.com/video/")
@@ -185,44 +181,62 @@ def sheets():
                           ]
                   }
 
-    internFirstName = sheetDict['first'] + " " + sheetDict['last']
-    print("intern name ", internName)
+    internName = sheetDict['first'] + " " + sheetDict['last']
+    internNameList.append(internName)
+    dironenames = []
+
     for item in os.listdir(directory_one):
-      file = re.search("(\w+ *\S*)(?=\.).(png|jpg|pdf|PNG|JPG|PDF)", item)
+      file = re.search("(\w+ *\S*)(?=\.).(png|jpg|jpeg|pdf|tif|gif|PNG|JPG|PDF|TIF|GIF|JPEG)", item)
       if file is not None:
           name = file.group(1)
           type = file.group(2)
-          print (" dir one names", name)
-          if "pdf" in type.lower() or "png" in type.lower() or "jpg" in type.lower():
+          dironenames.append(name)
+
+          if "pdf" in type.lower() or "png" in type.lower() or "jpg" in type.lower() or "tif" in type.lower() or "gif" in type.lower() or "jpeg" in type.lower():
             if name.lower() == internName.lower():
               sheetDict['sample'][0]['image'] = "/static/Sample_one/" + item
+            
     
     for item in os.listdir(directory_two):
-      file = re.search("(\w+ *\S*)(?=\.).(png|jpg|pdf|PNG|JPG|PDF)", item)
+      file = re.search("(\w+ *\S*)(?=\.).(png|jpg|jpeg|pdf|tif|gif|PNG|JPG|PDF|TIF|GIF|JPEG)", item)
       if file is not None:
           name = file.group(1)
           type = file.group(2)
-          if "pdf" in type.lower() or "png" in type.lower() or "jpg" in type.lower():
+          if "pdf" in type.lower() or "png" in type.lower() or "jpg" in type.lower() or "tif" in type.lower() or "gif" in type.lower() or "jpeg" in type.lower():
             if name.lower() == internName.lower():
               sheetDict['sample'][1]['image'] = "/static/Sample_two/" + item
+            
+              
+
+              
     
     for item in os.listdir(directory_three):
-      file = re.search("(\w+ *\S*)(?=\.).(png|jpg|pdf|PNG|JPG|PDF)", item)
+      file = re.search("(\w+ *\S*)(?=\.).(png|jpg|jpeg|pdf|tif|gif|PNG|JPG|PDF|TIF|GIF|JPEG)", item)
       if file is not None:
           name = file.group(1)
           type = file.group(2)
-          if "pdf" in type.lower() or "png" in type.lower() or "jpg" in type.lower():
+          if "pdf" in type.lower() or "png" in type.lower() or "jpg" in type.lower() or "tif" in type.lower() or "gif" in type.lower() or "jpeg" in type.lower():
             if name.lower() == internName.lower():
               sheetDict['sample'][2]['image'] = "/static/Sample_three/" + item
-          
+
+    for sampleObj in sheetDict['sample']:
+      if ".tif" in sampleObj['image']:
+        print(sampleObj['image']  )  
+        splittedobj = sampleObj['image'].split('.') 
+        print("splaitted obj", splittedobj)
+        splittedobj[1] = '.jpg'
+        sampleObj['image'] = splittedobj[0] + splittedobj[1]
+        print("sample obj" , sampleObj['image'])
+
 
     array.append(sheetDict)
     # print(" sheetdict", sheetDict)
     with open('static/jsonData.json', 'w') as file:
       file.write(json.dumps(array, sort_keys = True, indent = 4, separators = None))
   
+  
   return response
 
 if __name__ == "__main__":
-    app.run(debug = True, host='0.0.0.0')
+    app.run(debug = True)
 

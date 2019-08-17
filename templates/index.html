@@ -14,12 +14,16 @@ body {
 
 }
 .tblItems {
-  max-width: 350px;
+  width: 350px;
   max-height: auto;
 }
 
+.table-row {
+  border-top: solid black;
+  border-bottom: solid black;
+}
 .modalImgCSS {
-  height: 800px;
+  max-height: auto;
   width: 800px;
 }
 
@@ -42,8 +46,8 @@ body {
 }
 
 .pdf {
-  width: 330px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
 }
 
 .card-body {
@@ -54,6 +58,7 @@ body {
   display: block;
   position: relative;
   width: 350px;
+  margin-top: 10px;
 }
 
 .set {
@@ -69,6 +74,10 @@ body {
 .alert {
   margin-bottom: 0px;
   padding: 6px 12px 6px 12px;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: none;
 }
 
 </style>
@@ -127,17 +136,14 @@ $(document).on('click', '.modalImgCSS', function() {
 });
 
 $(document).on('click', '#submit', function() {
-  var choices = [];
   var favs = [];
   token = $('#token').val();
-  $('.set').each(function() {
-      choices.push($(this).attr('value'));
-  });
   $('.set:checked').each(function() {
       favs.push($(this).attr('value'));
   });
+  
+  console.log(" favs", favs)
   $.get($SCRIPT_ROOT + '/submit', {
-    choices: JSON.stringify(choices),
     favs: JSON.stringify(favs),
     token: token
   }, function(data) {
@@ -146,24 +152,6 @@ $(document).on('click', '#submit', function() {
 });
 
 </script>
-{% endblock %}
-
-{% block navItemsLeft %}
-
-<li>
-  <div class="btn-group btn-group-toggle" data-toggle="buttons">
-    <button class="btn btn-primary active" id="all" disabled>
-      <input type="radio" name="options" autocomplete="off"> All
-    </button>
-    <button class="btn btn-primary" id="selected">
-      <input type="radio" name="options" autocomplete="off"> Selected
-    </button>
-    <!-- <button class="btn btn-primary" id="sheet">
-      <input type="radio" name="options" autocomplete="off"> Sheets
-    </button> -->
-  </div>
-</li>
-
 {% endblock %}
 
 {% block navItemsRight %}
@@ -186,22 +174,14 @@ $(document).on('click', '#submit', function() {
 <table class="table table-secondary">
   <tbody id="table">
     {% for item in data %}
-    <tr id="row">
+    <tr id="row" class="table-row">
       {% if 'audrey' not in item['first']  and 'Test' not in item['first'] and 'First' not in item['first'] %}
       <td id="checkbox">
-          <input type="checkbox" class="center set" value="{{(item['first'], item['last'])}}">
+          <input type="checkbox" class="center set" value="{{item['first'] + ' ' + item['last']}}">
       </td>
       {% for element in item['sample'] %}
       <td id="col">
         <div>
-          {% if 'drive.google.com' in element['image'] and element['image'] != "" %}
-          <!-- <img class="tblItems" src="static/Moon.jpg" alt="Card image cap"> -->
-          <!-- <iframe class="tblItems video" src="static/Moon.jpg" frameborder="0" allow="encrypted-media" allowfullscreen></iframe> -->
-          <!-- <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
-            <img class="tblItems" src="{{element['image']}}" alt="Card image cap">
-        </button> -->
-          <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">Click here to view google drive link</a>
-          {% endif %}
           {% if element['video'] != "" and 'youtube' in element['video'] or 'vimeo' in element['video']%}
           <iframe class="tblItems video" src="{{ element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
           <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">Click to view on website </a>
@@ -210,7 +190,7 @@ $(document).on('click', '#submit', function() {
           <iframe class="tblItems video" src="{{element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
           <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">  Spotify </a>
           {% endif %}
-          {% if '.png' in element['image'] or '.jpg' in element['image'] or '.JPG' in element['image'] %}
+          {% if '.png' in element['image'] or '.jpg' in element['image'] or '.jpeg' in element['image'] or '.tif' in element['image'] or '.gif' in element['image'] or '.PNG' in element['image'] or '.JPG' in element['image'] or '.JPEG' in element['image'] or '.TIF' in element['image'] or '.GIF' in element['image'] %}
           <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
               <img class="tblItems" src="{{element['image']}}" alt="Card image cap">
           </button>

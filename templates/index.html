@@ -80,6 +80,10 @@ body {
     -webkit-appearance: none;
 }
 
+.view-sub {
+  color: white;
+}
+
 </style>
 {% endblock %}
 
@@ -148,7 +152,13 @@ $(document).on('click', '#submit', function() {
     token: token
   }, function(data) {
     $("#notif").html(data.result);
+    console.log("result", data.result)
   });
+});
+
+$('a').click(function(e) {
+    e.preventDefault();  //stop the browser from following
+    window.location.href = 'static/submissions.txt';
 });
 
 </script>
@@ -164,13 +174,28 @@ $(document).on('click', '#submit', function() {
     <div class="input-group-append">
       <button class="btn btn-primary" type="button" id="submit" disabled>Submit</button>
     </div>
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button" >
+          <a  class="view-sub" href="no-script.html">View Submissions</a>
+      </button>
+    </div>
   </div>
 </li>
 
 {% endblock %}
 
 {% block body %}
-
+<div id="names" hidden>
+  <li>
+      <p>test</p>
+  </li>
+  <li>
+    <p>test</p>
+</li>
+<li>
+  <p>test</p>
+</li>
+</div>
 <table class="table table-secondary">
   <tbody id="table">
     {% for item in data %}

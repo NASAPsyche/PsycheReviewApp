@@ -89,17 +89,30 @@ def submit():
     token = request.args.get('token')
     tokens = json.load(open(os.path.join(app.root_path, "static", "tokens.json")))
     submission = {}
-    if token in tokens:
+    if token in tokens and favs != []:
       submission.update({str(token) : json.dumps(favs)})
-        # submission = '{"%s":{"favourites":%s}}\n' % (str(token), json.dumps(favs))
-      with open(os.path.join(app.root_path, "static", "submissions.json"), "a") as file:
-          file.write(json.dumps(submission, sort_keys = True, indent = 4, separators = None))
+      outputfile = open("static/submissions.txt", "a")
+      outputfile.write(str(submission).strip("{").strip("}"))
+      outputfile.write("\n")
+      outputfile.close()
+
       return jsonify(result=notif.render(type="success", code="Success: ", message="Submission was recieved."))
     elif token == "":
       return jsonify(result=notif.render(type="warning", code="Warning: ", message="Missing Token."))
+    elif favs == [] :
+      return jsonify(result=notif.render(type="warning", code="Info: ", message="Please select an artwork."))
     else:
       return jsonify(result=notif.render(type="danger", code="Error: ", message="Invalid token."))
 
+@app.route('/submissions')
+def submissions():
+  with open("static/submissions.txt", "r") as file:
+    line = file.readline()
+    print("line split", line.split(":"))
+    print("line0", line[0].split("'"))
+    print("line1", line[1].split("'"))
+  
+  return "OK"
 
 @app.route('/sheets')
 def sheets():
@@ -221,12 +234,10 @@ def sheets():
 
     for sampleObj in sheetDict['sample']:
       if ".tif" in sampleObj['image']:
-        print(sampleObj['image']  )  
-        splittedobj = sampleObj['image'].split('.') 
-        print("splaitted obj", splittedobj)
+        splittedobj = sampleObj['image'].split('.')  
         splittedobj[1] = '.jpg'
         sampleObj['image'] = splittedobj[0] + splittedobj[1]
-        print("sample obj" , sampleObj['image'])
+       
 
 
     array.append(sheetDict)

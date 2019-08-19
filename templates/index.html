@@ -156,7 +156,7 @@ $(document).on('click', '#submit', function() {
   });
 });
 
-$('a').click(function(e) {
+$('.view-sub').click(function(e) {
     e.preventDefault();  //stop the browser from following
     window.location.href = 'static/submissions.txt';
 });
@@ -185,17 +185,6 @@ $('a').click(function(e) {
 {% endblock %}
 
 {% block body %}
-<div id="names" hidden>
-  <li>
-      <p>test</p>
-  </li>
-  <li>
-    <p>test</p>
-</li>
-<li>
-  <p>test</p>
-</li>
-</div>
 <table class="table table-secondary">
   <tbody id="table">
     {% for item in data %}

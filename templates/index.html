@@ -84,12 +84,35 @@ body {
   color: white;
 }
 
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(https://j2n9a3i8.stackpathcdn.com/wp-content/uploads/2014/08/Preloader_10.gif) center no-repeat #fff;
+}
+
+.copyright, .rights {
+ color: #fff;
+}
+
+
 </style>
 {% endblock %}
 
 {% block scripts %}
 <script>
 $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+
+// show loading indicator while page loads
+$(window).on('load', function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+    });
 
 $(document).ready(function() {
   $('#all').prop("disabled", false);
@@ -161,6 +184,8 @@ $('.view-sub').click(function(e) {
     window.location.href = 'static/submissions.txt';
 });
 
+
+
 </script>
 {% endblock %}
 
@@ -185,6 +210,8 @@ $('.view-sub').click(function(e) {
 {% endblock %}
 
 {% block body %}
+
+
 <table class="table table-secondary">
   <tbody id="table">
     {% for item in data %}
@@ -239,4 +266,17 @@ $('.view-sub').click(function(e) {
   </div>
 </div>
 
+<div class="se-pre-con"></div>
+{% endblock %}
+
+{% block footer %}
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+   <!-- Copyright -->
+   <div class="footer-copyright text-center py-3 copyright" >© NASA Psyche Mission 2019 :
+     <a class="rights" href="https://psyche.asu.edu/"> All Rights Reserved</a>
+   </div>
+   <!-- Copyright -->
+</footer>
+ <!-- Footer -->
 {% endblock %}

@@ -236,7 +236,7 @@ def sheets():
       file.write(json.dumps(array, sort_keys = True, indent = 4, separators = None))
   
   
-  return response
+  return str(response)
 
 if __name__ == "__main__":
     app.run(debug = True, host="0.0.0.0")

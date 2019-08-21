@@ -1,7 +1,7 @@
 import sys
 
 #Expand Python classes path with your app’s path
-sys.path.insert(0, “/data4/raj/src/anaconda3/envs/nasapsyche/lib/python3.7/site-packages”)
+sys.path.insert(0, “/home/raj/src/PsycheReviewApp”)
 from PsycheReviewApp import app
 
 #Initialize WSGI app object

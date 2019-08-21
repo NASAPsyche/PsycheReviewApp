@@ -104,16 +104,6 @@ def submit():
     else:
       return jsonify(result=notif.render(type="danger", code="Error: ", message="Invalid token."))
 
-@app.route('/submissions')
-def submissions():
-  with open("static/submissions.txt", "r") as file:
-    line = file.readline()
-    print("line split", line.split(":"))
-    print("line0", line[0].split("'"))
-    print("line1", line[1].split("'"))
-  
-  return "OK"
-
 @app.route('/sheets')
 def sheets():
   SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']

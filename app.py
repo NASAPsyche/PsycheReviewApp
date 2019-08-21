@@ -239,5 +239,5 @@ def sheets():
   return response
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run(debug = True, host=enterprise.sese.asu.edu)
 

@@ -119,10 +119,8 @@ $(document).ready(function() {
   $('#selected').prop("disabled", false);
   $('#submit').prop("disabled", false);
   $('#sheets').prop("disabled", true);
-  console.log("clicked sheet button !!!")
 
   $.get($SCRIPT_ROOT + '/sheets', function(response){
-    console.log("spreadsheet data", response);
   });
 });
 $(document).on('click', '#selected', function() {
@@ -169,13 +167,11 @@ $(document).on('click', '#submit', function() {
       favs.push($(this).attr('value'));
   });
   
-  console.log(" favs", favs)
   $.get($SCRIPT_ROOT + '/submit', {
     favs: JSON.stringify(favs),
     token: token
   }, function(data) {
     $("#notif").html(data.result);
-    console.log("result", data.result)
   });
 });
 

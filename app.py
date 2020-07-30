@@ -77,7 +77,7 @@ def selected():
     return jsonify(result=table.render(data=sets))
 
 
-@app.route('/all ')
+@app.route('/all')
 def all():
     return jsonify(result=table.render(data=data))
 

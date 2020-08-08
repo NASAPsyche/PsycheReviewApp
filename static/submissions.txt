@@ -1,2 +1,4 @@
 'Lindy': '["Aarti Patel", "Aurelia Waller"]'
 'Rohit': '["Aurelia Waller", "Feikim Lee", "Xiwen (Julie) Hu", "Arlette Franco"]'
+'Cassie': '["Aarti Patel"]'
+'Cassie': '["Aarti Patel", "Aurelia Waller"]'

@@ -86,34 +86,13 @@ def all():
 def submit():
     # choices = json.loads(request.args.get('choices'))
     favs = json.loads(request.args.get('favs'))
-    token = request.args.get('token')
+    reviewer_token_id = request.args.get('token')
     tokens = json.load(open(os.path.join(app.root_path, "static", "tokens.json")))
 
-    reviewername = get_reviewer_name(token)
-
-    # tokenjson = open(os.path.join(app.root_path, "static", "tokens_new.json"))
-    # token_dict = json.load(tokenjson)
-    # print(token_dict.get(token))
-    
-    # reviewername = reviewers_dict[token]
-    
-    # new_tokens_list = open(os.path.join(app.root_path, "static", "tokens_new.json"))
-    # data = json.load(new_tokens_list)
-    # new_tokens_list.close()
-
-    
-    
-    
-    # for key, value in new_tokens.items():
-    #     print(key, ":", value)
-    # value = str(new_tokens)
-    # print(value)
-  
-
-
+    reviewername = get_reviewer_name(reviewer_token_id)
 
     submission = {}
-    if token in tokens and favs != []:
+    if reviewer_token_id in tokens and favs != []:
       submission.update({str(reviewername) : json.dumps(favs)})
       outputfile = open("static/submissions.txt", "a")
       outputfile.write(str(submission).strip("{").strip("}"))
@@ -121,7 +100,7 @@ def submit():
       outputfile.close()
 
       return jsonify(result=notif.render(type="success", code="Success: ", message="Submission was recieved."))
-    elif token == "":
+    elif reviewer_token_id == "":
       return jsonify(result=notif.render(type="warning", code="Warning: ", message="Missing Token."))
     elif favs == [] :
       return jsonify(result=notif.render(type="warning", code="Info: ", message="Please select an artwork."))

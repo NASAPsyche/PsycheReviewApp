@@ -88,9 +88,33 @@ def submit():
     favs = json.loads(request.args.get('favs'))
     token = request.args.get('token')
     tokens = json.load(open(os.path.join(app.root_path, "static", "tokens.json")))
+
+    reviewername = get_reviewer_name(token)
+
+    # tokenjson = open(os.path.join(app.root_path, "static", "tokens_new.json"))
+    # token_dict = json.load(tokenjson)
+    # print(token_dict.get(token))
+    
+    # reviewername = reviewers_dict[token]
+    
+    # new_tokens_list = open(os.path.join(app.root_path, "static", "tokens_new.json"))
+    # data = json.load(new_tokens_list)
+    # new_tokens_list.close()
+
+    
+    
+    
+    # for key, value in new_tokens.items():
+    #     print(key, ":", value)
+    # value = str(new_tokens)
+    # print(value)
+  
+
+
+
     submission = {}
     if token in tokens and favs != []:
-      submission.update({str(token) : json.dumps(favs)})
+      submission.update({str(reviewername) : json.dumps(favs)})
       outputfile = open("static/submissions.txt", "a")
       outputfile.write(str(submission).strip("{").strip("}"))
       outputfile.write("\n")
@@ -237,6 +261,11 @@ def sheets():
   
   
   return str(response)
+
+def get_reviewer_name(token_id):
+  tokenjson = open(os.path.join(app.root_path, "static", "tokens_new.json"))
+  token_dict = json.load(tokenjson)
+  return str(token_dict.get(token_id))
 
 if __name__ == "__main__":
     app.run(debug = True, host="0.0.0.0")

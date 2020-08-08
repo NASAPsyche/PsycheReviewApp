@@ -1,3 +1,2 @@
-
-'427915': '["Amy Liu", "Swarnalakshmi Lakshmanan", "Bethany Shier"]'
-'590892': '["Julia Peterson"]'
+'Lindy': '["Aarti Patel", "Aurelia Waller"]'
+'Rohit': '["Aurelia Waller", "Feikim Lee", "Xiwen (Julie) Hu", "Arlette Franco"]'

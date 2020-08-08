@@ -61,6 +61,10 @@ notif = Template("""
 """)
 
 
+@app.route('/home')
+def home():
+  return render_template('new_page.html')
+
 @app.route('/')
 @app.route('/index')
 def index():
@@ -98,7 +102,6 @@ def submit():
       outputfile.write(str(submission).strip("{").strip("}"))
       outputfile.write("\n")
       outputfile.close()
-
       return jsonify(result=notif.render(type="success", code="Success: ", message="Submission was recieved."))
     elif reviewer_token_id == "":
       return jsonify(result=notif.render(type="warning", code="Warning: ", message="Missing Token."))

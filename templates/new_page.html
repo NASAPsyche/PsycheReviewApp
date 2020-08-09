@@ -42,6 +42,9 @@
     {% endfor %} -->
 
     {% for item in data %}
+    <td id="checkbox">
+        <input type="checkbox" class="center set" value="{{item['first'] + ' ' + item['last']}}">
+    </td>
     <div class="row">
         {% for sample in item['sample'] %}
         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -70,7 +73,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">{{sample['desc']}}</p>
-                    <a href="#" class="btn btn-primary">Click to view in Website</a>
+                    <a href="{{sample['image']}}" class="btn btn-primary" target="_blank">Click to view in Website</a>
                 </div>
             </div>
         </div> 

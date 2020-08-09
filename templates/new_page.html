@@ -42,42 +42,50 @@
     {% endfor %} -->
 
     {% for item in data %}
-    <td id="checkbox">
-        <input type="checkbox" class="center set" value="{{item['first'] + ' ' + item['last']}}">
-    </td>
-    <div class="row">
-        {% for sample in item['sample'] %}
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            {% if sample['video'] != "" %}
-                <div class="embed-responsive embed-responsive-1by1 card">
-                    <iframe class="embed-responsive-item" src="{{sample['video']}}"></iframe>
-                </div>   
-            {% endif %}
-            <!--This is image-->
-            {% if sample['video'] == ""  %}
-                {% if '.png' in sample['image'] or '.jpg' in sample['image'] or '.jpeg' in sample['image'] or '.tif' in sample['image'] or '.gif' in sample['image'] or '.PNG' in sample['image'] or '.JPG' in sample['image'] or '.JPEG' in sample['image'] or '.TIF' in sample['image'] or '.GIF' in sample['image']%}
+    <div class="card" style="padding: 16px;">
+        <td id="checkbox">
+            <input type="checkbox" class="center set" value="{{item['first'] + ' ' + item['last']}}">
+        </td>
+        <div class="row">
+            {% for sample in item['sample'] %}
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                {% if sample['video'] != "" %}
                 <div class="card">
-                    <img src="{{sample['image']}}" class="card-img-top" alt="..." style="padding: 10px;">
+                    <div class="embed-responsive embed-responsive-1by1">
+                        <iframe class="embed-responsive-item" src="{{sample['video']}}"></iframe>
+                    </div>   
+                    <a href="{{sample['video']}}" class="btn btn-primary" target="_blank">Click to view on website</a>
                 </div>
                 {% endif %}
-            {% endif %}
-            <!--This is pdf-->
-            {% if sample['video'] == ""  %}
-                {% if '.pdf' in sample['image'] or '.PDF' in sample['image'] %}
-                <div class="embed-responsive embed-responsive-1by1 card">
-                    <iframe class="embed-responsive-item" src="{{sample['image']}}"></iframe>
-                </div> 
+                <!--This is image-->
+                {% if sample['video'] == ""  %}
+                    {% if '.png' in sample['image'] or '.jpg' in sample['image'] or '.jpeg' in sample['image'] or '.tif' in sample['image'] or '.gif' in sample['image'] or '.PNG' in sample['image'] or '.JPG' in sample['image'] or '.JPEG' in sample['image'] or '.TIF' in sample['image'] or '.GIF' in sample['image']%}
+                    <div class="card">
+                        <img src="{{sample['image']}}" class="card-img-top" alt="..." style="padding: 10px;">
+                        <a href="{{sample['image']}}" class="btn btn-primary" target="_blank">Open in new Tab</a>
+                    </div>
+                    {% endif %}
                 {% endif %}
-            {% endif %}
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">{{sample['desc']}}</p>
-                    <a href="{{sample['image']}}" class="btn btn-primary" target="_blank">Click to view in Website</a>
+                <!--This is pdf-->
+                {% if sample['video'] == ""  %}
+                    {% if '.pdf' in sample['image'] or '.PDF' in sample['image'] %}
+                    <div class="card">
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <iframe class="embed-responsive-item" src="{{sample['image']}}"></iframe>
+                        </div> 
+                        <a href="{{sample['image']}}" class="btn btn-primary" target="_blank">Open in new Tab</a>
+                    </div>
+                    {% endif %}
+                {% endif %}
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Artwork Description</h5>
+                        <p class="card-text">{{sample['desc']}}</p>
+                    </div>
                 </div>
-            </div>
-        </div> 
-        {% endfor %}
+            </div> 
+            {% endfor %}
+        </div>
     </div>
         <!-- <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card">
@@ -130,7 +138,7 @@
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Please insert your ID token" aria-label="token" aria-describedby="token" id="token" required>
       <div class="input-group-append">
-        <button class="btn btn-primary" type="button" id="submit" disabled>Submit</button>
+        <button class="btn btn-primary" type="button" id="submit">Submit</button>
       </div>
     </div>
   </li>

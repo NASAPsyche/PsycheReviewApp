@@ -1,7 +1,82 @@
 {% extends 'template.html'%}
 {% block content %}
+
+<!-- {% for item in data %}
+    <tr id="row" class="table-row">
+      {% if 'audrey' not in item['first']  and 'Test' not in item['first'] and 'First' not in item['first'] %}
+      <td id="checkbox">
+          <input type="checkbox" class="center set" value="{{item['first'] + ' ' + item['last']}}">
+      </td>
+      {% for element in item['sample'] %}
+      <td id="col">
+        <div>
+          {% if element['video'] != "" and 'youtube' in element['video'] or 'vimeo' in element['video']%}
+          <iframe class="tblItems video" src="{{ element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+          <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">Click to view on website </a>
+          {% endif %}
+          {% if 'open.spotify.com' in element['video'] and element['video'] != "" %}
+          <iframe class="tblItems video" src="{{element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+          <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">  Spotify </a>
+          {% endif %}
+          {% if '.png' in element['image'] or '.jpg' in element['image'] or '.jpeg' in element['image'] or '.tif' in element['image'] or '.gif' in element['image'] or '.PNG' in element['image'] or '.JPG' in element['image'] or '.JPEG' in element['image'] or '.TIF' in element['image'] or '.GIF' in element['image'] %}
+          <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
+              <img class="tblItems" src="{{element['image']}}" alt="Card image cap">
+          </button>
+          <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a>
+          {% endif %}
+          {% if '.pdf' in element['image'] or '.PDF' in element['image'] %}
+          <embed class="tblItems pdf" src="{{element['image']}}">
+          <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a>
+          {% endif %}
+        </div>
+        <div class="card" >
+          <div class="card-body">
+            <h5 class="card-title">Artwork Description</h5>
+            <p class="card-text">{{element['desc']}}</p>
+          </div>
+        </div> 
+      </td>
+      {% endfor %}
+      {% endif %}
+    </tr>
+    {% endfor %} -->
+
+    {% for item in data %}
     <div class="row">
+        {% for sample in item['sample'] %}
         <div class="col-lg-4 col-md-6 col-sm-12">
+            {% if sample['video'] != "" %}
+                <div class="embed-responsive embed-responsive-1by1 card">
+                    <iframe class="embed-responsive-item" src="{{sample['video']}}"></iframe>
+                </div>   
+            {% endif %}
+            <!--This is image-->
+            {% if sample['video'] == ""  %}
+                {% if '.png' in sample['image'] or '.jpg' in sample['image'] or '.jpeg' in sample['image'] or '.tif' in sample['image'] or '.gif' in sample['image'] or '.PNG' in sample['image'] or '.JPG' in sample['image'] or '.JPEG' in sample['image'] or '.TIF' in sample['image'] or '.GIF' in sample['image']%}
+                <div class="card">
+                    <img src="{{sample['image']}}" class="card-img-top" alt="..." style="padding: 10px;">
+                </div>
+                {% endif %}
+            {% endif %}
+            <!--This is pdf-->
+            {% if sample['video'] == ""  %}
+                {% if '.pdf' in sample['image'] or '.PDF' in sample['image'] %}
+                <div class="embed-responsive embed-responsive-1by1 card">
+                    <iframe class="embed-responsive-item" src="{{sample['image']}}"></iframe>
+                </div> 
+                {% endif %}
+            {% endif %}
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">{{sample['desc']}}</p>
+                    <a href="#" class="btn btn-primary">Click to view in Website</a>
+                </div>
+            </div>
+        </div> 
+        {% endfor %}
+    </div>
+        <!-- <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card">
                 <img src="/static/Arts/A+ Gallery_44 - Rashi Kaushik.jpg" class="card-img-top" alt="..." style="padding: 10px;">
             </div>
@@ -36,9 +111,9 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-        </div>   
-</div>
-    </div>
+        </div>  
+     </div>    -->
+    {% endfor %}
 <footer class="page-footer font-small pt-4">
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 copyright" >© NASA Psyche Mission 2019 :

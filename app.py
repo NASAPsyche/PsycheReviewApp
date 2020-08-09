@@ -63,7 +63,7 @@ notif = Template("""
 
 @app.route('/home')
 def home():
-  return render_template('new_page.html')
+  return render_template('new_page.html', data=data)
 
 @app.route('/')
 @app.route('/index')

@@ -1,26 +1,5 @@
 [
-    {
-        "email": "Email Address",
-        "first": "First Name:",
-        "last": "Last Name:",
-        "sample": [
-            {
-                "desc": "Sample Work #1: Please provide a short description of this work that will advance our understanding of it (maximum of 350 characters, including spaces):",
-                "image": "Sample Work #1 (Option A): If you are submitting an image or written work, please upload your file here:",
-                "video": "Sample Work #1 (Option B): If you are submitting an audio or video clip, please paste the YouTube or Vimeo URL here:"
-            },
-            {
-                "desc": "Sample Work #2: Please provide a short description of this work that will advance our understanding of it (maximum of 350 characters, including spaces):",
-                "image": "Sample Work #2 (Option A): If you are submitting an image or written work, please upload your file here:",
-                "video": "Sample Work #2 (Option B): If you are submitting an audio or video clip, please paste the YouTube or Vimeo URL here:"
-            },
-            {
-                "desc": "Sample Work #3: Please provide a short description of this work that will advance our understanding of it (maximum of 350 characters, including spaces):",
-                "image": "Sample Work #3 (Option A): If you are submitting an image or written work, please upload your file here:",
-                "video": "Sample Work #3 (Option B): If you are submitting an audio or video clip, please paste the YouTube or Vimeo URL here:"
-            }
-        ]
-    },
+
     {
         "email": "aap94@pitt.edu",
         "first": "Aarti",

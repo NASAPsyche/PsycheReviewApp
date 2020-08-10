@@ -210,43 +210,35 @@ $('.view-sub').click(function(e) {
             <div id="col" class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 10px;">
               <div class="card">
                 {% if element['video'] != "" and 'youtube' in element['video'] or 'vimeo' in element['video']%}
-                <!-- <iframe class="tblItems video" src="{{ element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-                <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">Click to view on website </a> -->
-                
                   <div class="embed-responsive embed-responsive-1by1">
                       <iframe class="embed-responsive-item" src="{{element['video']}}"></iframe>
                   </div>   
                   <div class="card-body">
                     <h5 class="card-title">Artwork Description</h5>
-                    <p class="card-text">{{element['desc']}}</p>
+                    <p class="card-text" style="text-align: justify;">{{element['desc']}}</p>
                     <a href="{{element['video']}}" class="btn btn-{{item['color']}}" target="_blank">Open in new Tab</a>
                   </div>  
                 {% endif %}
                 {% if 'open.spotify.com' in element['video'] and element['video'] != "" %}
-                <!-- <iframe class="tblItems video" src="{{element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-                <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">  Spotify </a> -->
                   <div class="embed-responsive embed-responsive-1by1">
                       <iframe class="embed-responsive-item" src="{{element['video']}}"></iframe>
                   </div> 
                   <div class="card-body">
                     <h5 class="card-title">Artwork Description</h5>
-                    <p class="card-text">{{element['desc']}}</p>
+                    <p class="card-text" style="text-align: justify;">{{element['desc']}}</p>
                     <a href="{{element['video']}}" class="btn btn-{{item['color']}}" target="_blank">Click to view on Spotify</a>
                   </div>  
                 {% endif %}
                 {% if '.png' in element['image'] or '.jpg' in element['image'] or '.jpeg' in element['image'] or '.tif' in element['image'] or '.gif' in element['image'] or '.PNG' in element['image'] or '.JPG' in element['image'] or '.JPEG' in element['image'] or '.TIF' in element['image'] or '.GIF' in element['image'] %}
-                <!-- <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
-                    <img class="tblItems" src="{{element['image']}}" alt="Card image cap">
-                </button> -->
                 <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
                   <img src="{{element['image']}}" class="card-img-top" alt="..." style="padding-top: 10px;">
                 </button>
                   <div class="card-body">
                     <h5 class="card-title">Artwork Description</h5>
-                    <p class="card-text">{{element['desc']}}</p>
+                    <p class="card-text" style="text-align: justify;">{{element['desc']}}</p>
                     <a href="{{element['image']}}" class="btn btn-{{item['color']}}" target="_blank">Open in new Tab</a>
                   </div>
-                <!-- <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a> -->
+                
                 {% endif %}
                 {% if '.pdf' in element['image'] or '.PDF' in element['image'] %}
                   <div class="embed-responsive embed-responsive-1by1">
@@ -254,11 +246,10 @@ $('.view-sub').click(function(e) {
                   </div> 
                   <div class="card-body">
                     <h5 class="card-title">Artwork Description</h5>
-                    <p class="card-text">{{element['desc']}}</p>
+                    <p class="card-text" style="text-align: justify;">{{element['desc']}}</p>
                     <a href="{{element['image']}}" class="btn btn-{{item['color']}}" target="_blank">Open in new Tab</a>
                   </div>
-                <!-- <embed class="tblItems pdf" src="{{element['image']}}">
-                <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a> -->
+  
                 {% endif %}
               </div>
             </div>

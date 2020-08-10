@@ -86,6 +86,9 @@ def all():
     return jsonify(result=table.render(data=data))
 
 
+# @app.route('/submissions')
+#     return render_template(submissions.html)
+
 @app.route('/submit')
 def submit():
     # choices = json.loads(request.args.get('choices'))

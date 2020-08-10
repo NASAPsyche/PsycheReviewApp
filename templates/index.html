@@ -4,17 +4,10 @@
 <title>Index</title>
 <style>
 body {
-  background-color: #343a40;
+  background-color: #f47c33;
 }
 
-.card {
-  width: 350px;
-  margin-top: 5px;
-  
-
-}
 .tblItems {
-  width: 350px;
   max-height: auto;
 }
 
@@ -41,23 +34,19 @@ body {
 }
 
 .video {
-  width: 350px;
+  
   height: 300px;
 }
 
 .pdf {
-  width: 350px;
+  
   height: 350px;
 }
 
-.card-body {
-  width: 340px;
-  height: auto;
-}
+
 .pdfButton {
   display: block;
   position: relative;
-  width: 350px;
   margin-top: 10px;
 }
 
@@ -100,6 +89,10 @@ body {
  color: #fff;
 }
 
+
+.grad {
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
 
 </style>
 {% endblock %}
@@ -190,67 +183,90 @@ $('.view-sub').click(function(e) {
   <!-- -->
 </li>
 <li>
-  <div class="input-group">
+  <div class="input-group" style="margin-bottom: 10px; margin-top: 10px;">
     <input type="text" class="form-control" placeholder="Please insert your ID token" aria-label="token" aria-describedby="token" id="token" required>
     <div class="input-group-append">
-      <button class="btn btn-primary" type="button" id="submit" disabled>Submit</button>
+      <button class="btn btn-dark" type="button" id="submit" disabled>Submit</button>
     </div>
-    <div class="input-group-append">
+    <!-- <div class="input-group-append">
       <button class="btn btn-primary" type="button" >
           <a  class="view-sub" href="no-script.html">View Submissions</a>
       </button>
-    </div>
-  </div>
+    </div> -->
 </li>
 
 {% endblock %}
 
 {% block body %}
 
-
-<table class="table table-secondary">
-  <tbody id="table">
     {% for item in data %}
-    <tr id="row" class="table-row">
-      {% if 'audrey' not in item['first']  and 'Test' not in item['first'] and 'First' not in item['first'] %}
-      <td id="checkbox">
-          <input type="checkbox" class="center set" value="{{item['first'] + ' ' + item['last']}}">
-      </td>
-      {% for element in item['sample'] %}
-      <td id="col">
-        <div>
-          {% if element['video'] != "" and 'youtube' in element['video'] or 'vimeo' in element['video']%}
-          <iframe class="tblItems video" src="{{ element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-          <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">Click to view on website </a>
-          {% endif %}
-          {% if 'open.spotify.com' in element['video'] and element['video'] != "" %}
-          <iframe class="tblItems video" src="{{element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-          <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">  Spotify </a>
-          {% endif %}
-          {% if '.png' in element['image'] or '.jpg' in element['image'] or '.jpeg' in element['image'] or '.tif' in element['image'] or '.gif' in element['image'] or '.PNG' in element['image'] or '.JPG' in element['image'] or '.JPEG' in element['image'] or '.TIF' in element['image'] or '.GIF' in element['image'] %}
-          <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
-              <img class="tblItems" src="{{element['image']}}" alt="Card image cap">
-          </button>
-          <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a>
-          {% endif %}
-          {% if '.pdf' in element['image'] or '.PDF' in element['image'] %}
-          <embed class="tblItems pdf" src="{{element['image']}}">
-          <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a>
-          {% endif %}
-        </div>
-        <div class="card" >
-          <div class="card-body">
-            <h5 class="card-title">Artwork Description</h5>
-            <p class="card-text">{{element['desc']}}</p>
-          </div>
-        </div> 
-      </td>
-      {% endfor %}
-      {% endif %}
-    </tr>
+    <div class="card bg-{{item['color']}}" style="padding: 16px; margin: 8px;">
+      <div id="checkbox">
+        <input type="checkbox" class="center set" value="{{item['first'] + ' ' + item['last']}}" style="width: 32px; height: 32px; margin-bottom: 10px;">
+      </div>
+      <div id="row" class="row">
+            {% if 'audrey' not in item['first']  and 'Test' not in item['first'] and 'First' not in item['first'] %}
+            {% for element in item['sample'] %}
+            <div id="col" class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 10px;">
+              <div class="card">
+                {% if element['video'] != "" and 'youtube' in element['video'] or 'vimeo' in element['video']%}
+                <!-- <iframe class="tblItems video" src="{{ element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">Click to view on website </a> -->
+                
+                  <div class="embed-responsive embed-responsive-1by1">
+                      <iframe class="embed-responsive-item" src="{{element['video']}}"></iframe>
+                  </div>   
+                  <div class="card-body">
+                    <h5 class="card-title">Artwork Description</h5>
+                    <p class="card-text">{{element['desc']}}</p>
+                    <a href="{{element['video']}}" class="btn btn-{{item['color']}}" target="_blank">Open in new Tab</a>
+                  </div>  
+                {% endif %}
+                {% if 'open.spotify.com' in element['video'] and element['video'] != "" %}
+                <!-- <iframe class="tblItems video" src="{{element['video']}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                <a class="btn btn-primary pdfButton" type="button" href="{{element['video']}}" target="_blank">  Spotify </a> -->
+                  <div class="embed-responsive embed-responsive-1by1">
+                      <iframe class="embed-responsive-item" src="{{element['video']}}"></iframe>
+                  </div> 
+                  <div class="card-body">
+                    <h5 class="card-title">Artwork Description</h5>
+                    <p class="card-text">{{element['desc']}}</p>
+                    <a href="{{element['video']}}" class="btn btn-{{item['color']}}" target="_blank">Click to view on Spotify</a>
+                  </div>  
+                {% endif %}
+                {% if '.png' in element['image'] or '.jpg' in element['image'] or '.jpeg' in element['image'] or '.tif' in element['image'] or '.gif' in element['image'] or '.PNG' in element['image'] or '.JPG' in element['image'] or '.JPEG' in element['image'] or '.TIF' in element['image'] or '.GIF' in element['image'] %}
+                <!-- <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
+                    <img class="tblItems" src="{{element['image']}}" alt="Card image cap">
+                </button> -->
+                <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
+                  <img src="{{element['image']}}" class="card-img-top" alt="..." style="padding-top: 10px;">
+                </button>
+                  <div class="card-body">
+                    <h5 class="card-title">Artwork Description</h5>
+                    <p class="card-text">{{element['desc']}}</p>
+                    <a href="{{element['image']}}" class="btn btn-{{item['color']}}" target="_blank">Open in new Tab</a>
+                  </div>
+                <!-- <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a> -->
+                {% endif %}
+                {% if '.pdf' in element['image'] or '.PDF' in element['image'] %}
+                  <div class="embed-responsive embed-responsive-1by1">
+                      <iframe class="embed-responsive-item" src="{{element['image']}}"></iframe>
+                  </div> 
+                  <div class="card-body">
+                    <h5 class="card-title">Artwork Description</h5>
+                    <p class="card-text">{{element['desc']}}</p>
+                    <a href="{{element['image']}}" class="btn btn-{{item['color']}}" target="_blank">Open in new Tab</a>
+                  </div>
+                <!-- <embed class="tblItems pdf" src="{{element['image']}}">
+                <a class="btn btn-primary pdfButton" type="button" href="{{element['image']}}" target="_blank">View in New Tab</a> -->
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+      </div>
+    </div>
     {% endfor %}
-  </tbody>
-</table>
 
 <div class="modal fade" id="selectedImg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="false">
   <div class="modal-dialog modal-lg" role="document">
@@ -261,18 +277,18 @@ $('.view-sub').click(function(e) {
     </div>
   </div>
 </div>
-
+<div class=""><footer class="page-footer font-small pt-4">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 copyright" >© NASA Mission to Psyche 2020 :
+    <a class="rights" href="https://psyche.asu.edu/"> All Rights Reserved</a>
+  </div>
+  <!-- Copyright -->
+</footer></div>
 <div class="se-pre-con"></div>
 {% endblock %}
 
 {% block footer %}
 <!-- Footer -->
-<footer class="page-footer font-small pt-4">
-   <!-- Copyright -->
-   <div class="footer-copyright text-center py-3 copyright" >© NASA Psyche Mission 2019 :
-     <a class="rights" href="https://psyche.asu.edu/"> All Rights Reserved</a>
-   </div>
-   <!-- Copyright -->
-</footer>
+
  <!-- Footer -->
 {% endblock %}

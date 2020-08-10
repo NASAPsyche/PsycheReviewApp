@@ -1,6 +1,6 @@
 [
-
     {
+        "color": "secondary",
         "email": "aap94@pitt.edu",
         "first": "Aarti",
         "last": "Patel",
@@ -23,6 +23,7 @@
         ]
     },
     {
+        "color": "info",
         "email": "alwalle1@asu.edu",
         "first": "Aurelia",
         "last": "Waller",
@@ -45,6 +46,7 @@
         ]
     },
     {
+        "color": "success",
         "email": "aurelialwaller@gmail.com",
         "first": "Aurelia",
         "last": "Waller",
@@ -67,6 +69,7 @@
         ]
     },
     {
+        "color": "danger",
         "email": "kimikimiart9898@gmail.com",
         "first": "Feikim",
         "last": "Lee",
@@ -89,6 +92,7 @@
         ]
     },
     {
+        "color": "dark",
         "email": "xhu2@bowdoin.edu",
         "first": "Xiwen (Julie)",
         "last": "Hu",
@@ -111,6 +115,7 @@
         ]
     },
     {
+        "color": "info",
         "email": "afranc29@asu.edu",
         "first": "Arlette",
         "last": "Franco",
@@ -133,6 +138,7 @@
         ]
     },
     {
+        "color": "warning",
         "email": "ssawant5@asu.edu",
         "first": "Sarika",
         "last": "Sawant",
@@ -155,6 +161,7 @@
         ]
     },
     {
+        "color": "info",
         "email": "farnsj1@unlv.nevada.edu",
         "first": "Jessica",
         "last": "Farnsworth",
@@ -177,6 +184,7 @@
         ]
     },
     {
+        "color": "dark",
         "email": "ssmania@asu.edu",
         "first": "Siena",
         "last": "Smania",
@@ -199,6 +207,7 @@
         ]
     },
     {
+        "color": "dark",
         "email": "mlunbery@asu.edu",
         "first": "Magdalene",
         "last": "Lunbery",
@@ -221,6 +230,7 @@
         ]
     },
     {
+        "color": "success",
         "email": "ahe1408@rit.edu",
         "first": "Anne",
         "last": "Elliott",
@@ -243,6 +253,7 @@
         ]
     },
     {
+        "color": "warning",
         "email": "ler4982@g.rit.edu",
         "first": "Lucie",
         "last": "Robert",
@@ -259,12 +270,13 @@
             },
             {
                 "desc": "Child Labor Infographic. Created in Adobe Illustrator. Created to being awareness to the dark undercurrent of child labor and exploitation that underpins capitalism and allows us in the United States to live a life of consumerism and privilege.  ",
-                "image": "/static/Arts/Child Labor Infographic - Lucie Robert",
+                "image": "/static/Arts/Child Labor Infographic - Lucie Robert.png",
                 "video": ""
             }
         ]
     },
     {
+        "color": "success",
         "email": "slin111@asu.edu",
         "first": "Sheng",
         "last": "Lin",
@@ -287,6 +299,7 @@
         ]
     },
     {
+        "color": "primary",
         "email": "Elmore48nicole@gmail.com",
         "first": "Nicole",
         "last": "Elmore",
@@ -309,6 +322,7 @@
         ]
     },
     {
+        "color": "danger",
         "email": "ganeshakrishna25@gmail.com",
         "first": "Rashi",
         "last": "Kaushik",
@@ -331,28 +345,30 @@
         ]
     },
     {
+        "color": "info",
         "email": "mchouchi@asu.edu",
         "first": "Michelle",
         "last": "Houchins",
         "sample": [
             {
                 "desc": "Although this piece looks like a simple flower, it actually represents the peculiarity of the ordinary. Many things or people in our world may seem very simple or even dull at first, but if you look underneath, you will find how truly extraordinary they are. ",
-                "image": "/static/Arts/Psyche Inspired Artwork #1 - Michelle Houchins.jpg",
+                "image": "/static/Arts/Psyche Inspired Artwork1 - Michelle Houchins.jpg",
                 "video": ""
             },
             {
                 "desc": "With this piece, I chose to depict the simplicity of companionship in nature. Animals, just like humans, long for the presence of others, even if it is not essential to their survival.  ",
-                "image": "/static/Arts/Psyche Inspired Artwork #2 - Michelle Houchins.jpg",
+                "image": "/static/Arts/Psyche Inspired Artwork2 - Michelle Houchins.jpg",
                 "video": ""
             },
             {
                 "desc": "With this piece, I wanted to symbolize the freedom of childhood. When you are young, you aren\u2019t afraid to dream, you aren\u2019t afraid to step out of your comfort zone, and most importantly, you aren\u2019t afraid of reaching for the stars. ",
-                "image": "/static/Arts/Psyche Inspired Artwork #3 - Michelle Houchins.jpg",
+                "image": "/static/Arts/Psyche Inspired Artwork3 - Michelle Houchins.jpg",
                 "video": ""
             }
         ]
     },
     {
+        "color": "danger",
         "email": "dzepedacuba@gmail.com",
         "first": "Daniel",
         "last": "Zepeda-Cuba",
@@ -375,6 +391,7 @@
         ]
     },
     {
+        "color": "info",
         "email": "bny3278@g.rit.edu",
         "first": "Brianna",
         "last": "Young",
@@ -397,6 +414,7 @@
         ]
     },
     {
+        "color": "secondary",
         "email": "alfonsob10.ab@gmail.com",
         "first": "alfonso",
         "last": "barrientos",
@@ -419,6 +437,7 @@
         ]
     },
     {
+        "color": "danger",
         "email": "lydiaraepitts@gmail.com",
         "first": "Lydia",
         "last": "Pitts",
@@ -441,6 +460,7 @@
         ]
     },
     {
+        "color": "info",
         "email": "akinger1@asu.edu",
         "first": "Ash",
         "last": "Kingery",
@@ -463,6 +483,7 @@
         ]
     },
     {
+        "color": "info",
         "email": "annikalauer@gmail.com",
         "first": "Annika",
         "last": "Lauer",
@@ -485,6 +506,7 @@
         ]
     },
     {
+        "color": "success",
         "email": "emca0578@colorado.edu",
         "first": "Emily",
         "last": "Carroll",
@@ -507,6 +529,7 @@
         ]
     },
     {
+        "color": "success",
         "email": "an.nt.than04@gmail.com",
         "first": "An",
         "last": "Than",
@@ -529,6 +552,7 @@
         ]
     },
     {
+        "color": "success",
         "email": "rahulkantsinha62@gmail.com",
         "first": "Rahul kant",
         "last": "Sinha",
@@ -551,6 +575,7 @@
         ]
     },
     {
+        "color": "dark",
         "email": "oxg3600@g.rit.edu",
         "first": "Olivia",
         "last": "Germano",
@@ -573,6 +598,7 @@
         ]
     },
     {
+        "color": "warning",
         "email": "alison.rahman@utexas.edu",
         "first": "Alison",
         "last": "Rahman",

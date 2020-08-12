@@ -9,6 +9,7 @@ import os.path
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+from datetime import datetime
 
 
 app = Flask(__name__)
@@ -99,11 +100,21 @@ def submit():
     reviewername = get_reviewer_name(reviewer_token_id)
 
     submission = {}
+    reviews = {}
     if reviewer_token_id in tokens and favs != []:
       submission.update({str(reviewername) : json.dumps(favs)})
       outputfile = open("static/submissions.txt", "a")
       outputfile.write(str(submission).strip("{").strip("}"))
       outputfile.write("\n")
+
+
+      reviews.update({str(reviewer_token_id) : json.dumps(favs)})
+      reviewString = str(reviews).strip("{").strip("}")
+      reviewString = "[" +getCurrentTime() + "]      "+reviewString
+      reviewFile = open("static/reviews.txt", "a")
+      reviewFile.write(reviewString)
+      reviewFile.write("\n")
+
       outputfile.close()
       return jsonify(result=notif.render(type="success", code="Success: ", message="Submission was recieved."))
     elif reviewer_token_id == "":
@@ -251,6 +262,11 @@ def get_reviewer_name(token_id):
   tokenjson = open(os.path.join(app.root_path, "static", "tokens_new.json"))
   token_dict = json.load(tokenjson)
   return str(token_dict.get(token_id))
+
+def getCurrentTime():
+  now = datetime.now()
+  current_time = now.strftime("%m/%d/%Y at %H:%M:%S")
+  return str(current_time)  
 
 if __name__ == "__main__":
     app.run(debug = True, host="0.0.0.0")

@@ -251,6 +251,17 @@ $('.view-sub').click(function(e) {
                   </div>
   
                 {% endif %}
+                {% if element['website']%}
+                <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
+                    <img src="/static/image_not_found.png" class="card-img-top" alt="..." style="padding-top: 10px;">
+                </button>
+                  <div class="card-body">
+                    <h5 class="card-title">Artwork Description</h5>
+                    <p class="card-text" style="text-align: justify;">{{element['desc']}}</p>
+                    <a href="{{element['website']}}" class="btn btn-{{item['color']}}" target="_blank">Open Website</a>
+                  </div>
+  
+                {% endif %}
               </div>
             </div>
             {% endfor %}

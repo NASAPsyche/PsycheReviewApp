@@ -1,2 +1,3 @@
 'Cassie Bowman': '["Aarti Patel"]'
 'Cassie Bowman': '["Kelly Jin", "Sam Hollasch"]'
+'Lindy Elkins-Tanton': '["Peter Chavez"]'

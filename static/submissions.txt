@@ -1,2 +1,2 @@
-'Rohit': '["Aarti Patel", "Aurelia Waller"]'
-'Rohit': '["Aurelia Waller"]'
+'Cassie Bowman': '["Aarti Patel"]'
+'Cassie Bowman': '["Kelly Jin", "Sam Hollasch"]'

@@ -108,9 +108,10 @@ def submit():
       outputfile.write("\n")
 
 
-      reviews.update({str(reviewer_token_id) : json.dumps(favs)})
-      reviewString = str(reviews).strip("{").strip("}")
-      reviewString = "[" +getCurrentTime() + "]      "+reviewString
+      # reviews.update({str(reviewer_token_id) : json.dumps(favs)})
+      # reviewString = str(reviews).strip("{").strip("}")
+
+      reviewString = "[" +getCurrentTime() + "]      "+str(reviewer_token_id)
       reviewFile = open("static/reviews.txt", "a")
       reviewFile.write(reviewString)
       reviewFile.write("\n")

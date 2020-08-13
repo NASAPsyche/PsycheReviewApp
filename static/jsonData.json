@@ -1,6 +1,7 @@
 [
+
     {
-        "color": "secondary",
+        "color": "success",
         "email": "aap94@pitt.edu",
         "first": "Aarti",
         "last": "Patel",
@@ -23,30 +24,7 @@
         ]
     },
     {
-        "color": "info",
-        "email": "alwalle1@asu.edu",
-        "first": "Aurelia",
-        "last": "Waller",
-        "sample": [
-            {
-                "desc": "This is an image of three CAD Drawings that was imported into Photoshop to create the background and place the 3 separate images together. The image is a reflection of the Psyche mission (the asteroid and satellite). The three CAD drawings are the asteroid, satellite and Psyche lettering. I created all drawings and background.",
-                "image": "/static/Arts/Psyche Inspired CAD Image - Aurelia Waller.png",
-                "video": ""
-            },
-            {
-                "desc": "This is a photo that I took while visiting NASA Johnson Space Center at the Neutral Buoyancy Lab. It shows an astronaut suiting up and preparing to go into the pool with trainers assisting and supervising.",
-                "image": "/static/Arts/NBL Trainers and Astronauts - Aurelia Waller.png",
-                "video": ""
-            },
-            {
-                "desc": "This is a brief video of a transparent asteroid, satellite and the word Psyche rotating with an animated background. This is an artist conception of the Psyche mission as NASA, ASU and their partners search for what the makeup of the Psyche asteroid is. The music, CAD drawings and video are made by me.",
-                "image": "",
-                "video": "https://youtube.com/embed/kjR55hVa6RQ"
-            }
-        ]
-    },
-    {
-        "color": "success",
+        "color": "warning",
         "email": "aurelialwaller@gmail.com",
         "first": "Aurelia",
         "last": "Waller",
@@ -69,7 +47,7 @@
         ]
     },
     {
-        "color": "danger",
+        "color": "info",
         "email": "kimikimiart9898@gmail.com",
         "first": "Feikim",
         "last": "Lee",
@@ -92,7 +70,7 @@
         ]
     },
     {
-        "color": "dark",
+        "color": "success",
         "email": "xhu2@bowdoin.edu",
         "first": "Xiwen (Julie)",
         "last": "Hu",
@@ -115,7 +93,7 @@
         ]
     },
     {
-        "color": "info",
+        "color": "warning",
         "email": "afranc29@asu.edu",
         "first": "Arlette",
         "last": "Franco",
@@ -138,7 +116,7 @@
         ]
     },
     {
-        "color": "warning",
+        "color": "primary",
         "email": "ssawant5@asu.edu",
         "first": "Sarika",
         "last": "Sawant",
@@ -161,7 +139,7 @@
         ]
     },
     {
-        "color": "info",
+        "color": "warning",
         "email": "farnsj1@unlv.nevada.edu",
         "first": "Jessica",
         "last": "Farnsworth",
@@ -184,7 +162,7 @@
         ]
     },
     {
-        "color": "dark",
+        "color": "primary",
         "email": "ssmania@asu.edu",
         "first": "Siena",
         "last": "Smania",
@@ -207,7 +185,7 @@
         ]
     },
     {
-        "color": "dark",
+        "color": "success",
         "email": "mlunbery@asu.edu",
         "first": "Magdalene",
         "last": "Lunbery",
@@ -230,7 +208,7 @@
         ]
     },
     {
-        "color": "success",
+        "color": "danger",
         "email": "ahe1408@rit.edu",
         "first": "Anne",
         "last": "Elliott",
@@ -253,7 +231,7 @@
         ]
     },
     {
-        "color": "warning",
+        "color": "info",
         "email": "ler4982@g.rit.edu",
         "first": "Lucie",
         "last": "Robert",
@@ -276,7 +254,7 @@
         ]
     },
     {
-        "color": "success",
+        "color": "warning",
         "email": "slin111@asu.edu",
         "first": "Sheng",
         "last": "Lin",
@@ -299,7 +277,7 @@
         ]
     },
     {
-        "color": "primary",
+        "color": "success",
         "email": "Elmore48nicole@gmail.com",
         "first": "Nicole",
         "last": "Elmore",
@@ -322,30 +300,7 @@
         ]
     },
     {
-        "color": "danger",
-        "email": "ganeshakrishna25@gmail.com",
-        "first": "Rashi",
-        "last": "Kaushik",
-        "sample": [
-            {
-                "desc": "This work is based upon the Indian mythology which is based upon the teachings of Lord Krishna who is the speaker of Bhagvad Gita which was spoken amidst of the viscous war Mahabharata, this  extraordinary epic  reveals about the truth of our existence and how should a person live and about the science of God.",
-                "image": "/static/Arts/IMG_20200412_134546_068 - Rashi Kaushik.jpg",
-                "video": ""
-            },
-            {
-                "desc": "This work includes an illustration of a fish, which is after the food pieces, here the fish symbolises our existence and the food Science , which means that our very existence is dependent upon science, as to live we should understand the Science of life.",
-                "image": "/static/Arts/IMG_20200724_191321_184 - Rashi Kaushik.jpg",
-                "video": ""
-            },
-            {
-                "desc": "This artwork depicts an Astronaut floating in space. This work is a tribute to our respective scientists and Astronauts, who are working beyond limits for taking the mankind to new heights and opening the doors to a whole new era of science.",
-                "image": "/static/Arts/A+ Gallery_44 - Rashi Kaushik.jpg",
-                "video": ""
-            }
-        ]
-    },
-    {
-        "color": "info",
+        "color": "warning",
         "email": "mchouchi@asu.edu",
         "first": "Michelle",
         "last": "Houchins",
@@ -368,7 +323,7 @@
         ]
     },
     {
-        "color": "danger",
+        "color": "warning",
         "email": "dzepedacuba@gmail.com",
         "first": "Daniel",
         "last": "Zepeda-Cuba",
@@ -391,7 +346,7 @@
         ]
     },
     {
-        "color": "info",
+        "color": "success",
         "email": "bny3278@g.rit.edu",
         "first": "Brianna",
         "last": "Young",
@@ -414,7 +369,7 @@
         ]
     },
     {
-        "color": "secondary",
+        "color": "dark",
         "email": "alfonsob10.ab@gmail.com",
         "first": "alfonso",
         "last": "barrientos",
@@ -437,7 +392,7 @@
         ]
     },
     {
-        "color": "danger",
+        "color": "secondary",
         "email": "lydiaraepitts@gmail.com",
         "first": "Lydia",
         "last": "Pitts",
@@ -460,7 +415,7 @@
         ]
     },
     {
-        "color": "info",
+        "color": "danger",
         "email": "akinger1@asu.edu",
         "first": "Ash",
         "last": "Kingery",
@@ -506,7 +461,7 @@
         ]
     },
     {
-        "color": "success",
+        "color": "danger",
         "email": "emca0578@colorado.edu",
         "first": "Emily",
         "last": "Carroll",
@@ -529,7 +484,7 @@
         ]
     },
     {
-        "color": "success",
+        "color": "warning",
         "email": "an.nt.than04@gmail.com",
         "first": "An",
         "last": "Than",
@@ -552,30 +507,7 @@
         ]
     },
     {
-        "color": "success",
-        "email": "rahulkantsinha62@gmail.com",
-        "first": "Rahul kant",
-        "last": "Sinha",
-        "sample": [
-            {
-                "desc": "I am working on satellite that me the Mars planet to find ancient life and and mining process",
-                "image": "/static/image_not_found.png",
-                "video": ""
-            },
-            {
-                "desc": "Same also I am working on a satellite and a Rover to there planet to find minerals an ancient life and mining also.",
-                "image": "/static/image_not_found.png",
-                "video": ""
-            },
-            {
-                "desc": "Same also I am working on a satellite and a Rover to there planet to find minerals an ancient life and mining also",
-                "image": "/static/image_not_found.png",
-                "video": ""
-            }
-        ]
-    },
-    {
-        "color": "dark",
+        "color": "warning",
         "email": "oxg3600@g.rit.edu",
         "first": "Olivia",
         "last": "Germano",
@@ -598,7 +530,7 @@
         ]
     },
     {
-        "color": "warning",
+        "color": "primary",
         "email": "alison.rahman@utexas.edu",
         "first": "Alison",
         "last": "Rahman",
@@ -617,6 +549,1225 @@
                 "desc": "The following poem is darker and addresses child abuse/sexual assault. After witnessing the effect both had on a close family member, I decided to write a poem that would spread awareness about how it can be hard to move on. I know this poem may be sensitive, but I wrote it to give voice to an issue that still occurs today and is horrifying. ",
                 "image": "/static/Arts/Sample 3 Psyche App - Alison M Rahman.pdf",
                 "video": ""
+            }
+        ]
+    },
+    {
+        "color": "info",
+        "email": "dezachary@yahoo.com",
+        "first": "Zachary",
+        "last": "Deziel",
+        "sample": [
+            {
+                "desc": "The video submission for the Nuclear Olympiad that won me a trip to Austria and the IAEA headquarters",
+                "image": "",
+                "video": "https://www.youtube.com/embed/0z1xgJ4nxgQ"
+            },
+            {
+                "desc": "The essay I wrote for above",
+                "image": "/static/Arts/Zachary Deziel part 3 - Zachary Deziel.pdf",
+                "video": ""
+            },
+            {
+                "desc": "Infographic I made for the current IPHE student contest",
+                "image": "/static/Arts/USA_ISU_DEZIEL - Zachary Deziel.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "primary",
+        "email": "stanamsreeja@seattleu.edu",
+        "first": "SREEJA",
+        "last": "STANAM",
+        "sample": [
+            {
+                "desc": "This is an art piece where I experimented with repetitive patterns and symmetry. I pulled inpiration from traditional Indian designs in in order to create these designs.  ",
+                "image": "/static/Arts/IMG_4626 - Sreeja S.JPG",
+                "video": ""
+            },
+            {
+                "desc": "This piece is a close up tiger, in which I emphasized the use of shading to convey the depths of volume and color without actually using color.",
+                "image": "/static/Arts/IMG_4642 - Sreeja S.JPG",
+                "video": ""
+            },
+            {
+                "desc": "This piece integrates calligraphy, an artistic writing style, with music lyrics as credited in the bottom of the piece. The art in the background is the album cover. ",
+                "image": "/static/Arts/2020-06-11T17_19_42.173Z (1) - Sreeja S.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "jhoacreative@gmail.com",
+        "first": "Jhovana",
+        "last": "Correa",
+        "sample": [
+            {
+                "desc": "The tittle of this Printmaking piece is \"A UNIVERSE\", 2020. I used three different layers to show how I imagined the universe with the starts and beautiful colors that contrast with each other. ",
+                "image": "/static/Arts/1 - Jhovana Correa.jpg",
+                "video": ""
+            },
+            {
+                "desc": "The title of this Printmaking piece is \"THE ARGUMENT\", 2020. The faces are looking at each other, there is something that has to be said, there are tears and eyes of pain.there is confusion and disillusion of two souls that love each other more and more every day.   ",
+                "image": "/static/Arts/2 - Jhovana Correa.jpg",
+                "video": ""
+            },
+            {
+                "desc": "The title of this Printmaking piece is \" LOST2020\", 2020. This is a collection of things that have a pair, but for some reason, I lost one of them and kept them anyways. I think it is because I keep expecting to find the pair. Some people can relate to this, especially females. Some of the things you can see are earings, sock, and a bra clasp. ",
+                "image": "/static/Arts/3 - Jhovana Correa.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "email": "mih221@lehigh.edu",
+        "first": "Mikayla",
+        "last": "Hymanson",
+        "sample": [
+            {
+                "desc": "  \u201c2020\u201d is a visual representation of how the year 2020 has played an emotional toll on many. From the fires in Australia to a worldwide pandemic, the year has had unforeseeable and historic events. I chose to depict the tiredness and frustration through an eye, which has the ability to show an immense amount of emotion. ",
+                "image": "/static/Arts/eyepull - Mikayla Hymanson.jpg",
+                "video": ""
+            },
+            {
+                "desc": "The fashion industry is one of the most polluting industries due to textile waste. Using an upcycled jacket, I painted a snake to represent the healing of the environment. Just as a snake sheds its skin to reveal new skin underneath, we must \u201cnurture nature\u201d to create a new world in which helping the environment is a priority. ",
+                "image": "/static/Arts/IMG_4646 - Mikayla Hymanson.JPG",
+                "video": ""
+            },
+            {
+                "desc": "Pulling inspiration from one of my favorite songs, \u201cShe\u201d by Harry Styles, the female figure represents confidence and empowerment. The light blue background presents a sense of tranquility, as the woman relaxes with her hair wrapped in a towel and eating a strawberry. The entire scene is meant to invoke an impression of inner peace and self-love. ",
+                "image": "/static/Arts/she-01 - Mikayla Hymanson.png",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "pachave4@asu.edu",
+        "first": "Peter",
+        "last": "Chavez",
+        "sample": [
+            {
+                "desc": "Showcased in this document are four visual samples intended to demonstrate my technical drawing ability on paper and via digital.  The visuals in the top left and bottom right are drawings created with graphite pencil that show mastery of form and shadowing while the visuals in the top right and bottom left were created with a digital pencil.",
+                "image": "/static/Arts/art samples - Peter Chavez.jpg",
+                "video": ""
+            },
+            {
+                "desc": "The poem \u201cin the night, we meet\u201d (2020) is a written piece that I wrote for my girlfriend.  It demonstrates my ability to make use of imagery, wordplay, and style to convey an idea.  I chose this piece because it is a prime example of my vivid writing style that makes careful use of devices such as imagery and consonance.",
+                "image": "/static/Arts/(poem) in the night, we meet - Peter Chavez.pdf",
+                "video": ""
+            },
+            {
+                "desc": "Simply Me (2017) Snippet is part of a biographical video I created for my AP Language and Composition class in high school.  Through visual and auditory means, I was able to successfully capture my values and persona.  It demonstrates my ability to create visual appeal with intentional technical editing for the purpose of telling a story.",
+                "image": "",
+                "video": "https://player.vimeo.com/video/user120716455/review/446004532/b1ac600bb9"
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "email": "kj8044@rit.edu",
+        "first": "Kelly",
+        "last": "Jin",
+        "sample": [
+            {
+                "desc": "An illustration of a fruit bat girl stealing some poor sap's picnic.",
+                "image": "/static/Arts/peaches - Kelly Jin.png",
+                "video": ""
+            },
+            {
+                "desc": "A witch drawing upon arcane magic - probably to really mess up someone.",
+                "image": "/static/Arts/emory1 - Kelly Jin.png",
+                "video": ""
+            },
+            {
+                "desc": "Someone sleeping at their desk after a long night. ",
+                "image": "/static/Arts/img2 - Kelly Jin.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "info",
+        "email": "sxh2675@rit.edu",
+        "first": "Sam",
+        "last": "Hollasch",
+        "sample": [
+            {
+                "desc": "The Icy Moon Of A Gas Giant (2020)  is a digital illustration inspired by the icy moons of Jupiter and Saturn. I wanted to depict the surface of a frozen moon, a cold but habitable world orbiting a gas giant.",
+                "image": "/static/Arts/SamHollasch MOON - Samantha Hollasch.jpg",
+                "video": ""
+            },
+            {
+                "desc": "Sol (2019) is a table lamp design project inspired by the sun, our planet\u2019s greatest source of light. My intent for this project was to create a lighting device which could act as a visually balanced, sculptural piece, as well as provide a warm, energizing glow.",
+                "image": "/static/Arts/SamHollasch SOL - Samantha Hollasch.jpg",
+                "video": ""
+            },
+            {
+                "desc": "Stay Still\u2026 (2020) is a digital illustration that is part of an ongoing series of works that document the adventures of a pair of cosmic explorers. This piece depicts the duo taking cover under the lip of a sandy plateau, hiding quietly from fanged reptilian creatures.",
+                "image": "/static/Arts/SamHollasch STILL - Samantha Hollasch.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "email": "jmdoyle@syr.edu",
+        "first": "Jaclyn",
+        "last": "Doyle",
+        "sample": [
+            {
+                "desc": " Tasked with designing housing for formerly homeless individuals, focused on homeless women. Homeless women are thought of as vulnerable, making them a target, 92% of homeless women report being physically & sexually abused in their lifetime. The design interprets these struggles this & through architecture attempts to promote empowerment of them.",
+                "image": "",
+                "video": "https://jaclyndoyle.myportfolio.com/can-you-see-me"
+            },
+            {
+                "desc": "A translation through 2D & 3D space, through perspective & distortion, looking to find the truth between the image & the 3D. When presented with the first image, one would describe it as a desk, but as we move through space we realize that the first image given to us is a false sense of reality & actually the image does not match the 3D object.",
+                "image": "",
+                "video": "https://profetadaniele2.wixsite.com/indeterminate-2020/copy-of-bb-ale"
+            },
+            {
+                "desc": "Tasked with designing a graft and bridge on Lincoln Road, the design gives a visual and physical connection between Soundscape Park and Lincoln Road. The building is made up of two completely separate objects that nest together cohesively. Creating a topological continuity in the skin that deviates to create the interior spaces",
+                "image": "",
+                "video": "https://jaclyndoyle.myportfolio.com/nestling-connections"
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "shirleyannenguyen@gmail.com",
+        "first": "Shirley",
+        "last": "Nguyen",
+        "sample": [
+            {
+                "desc": "\"Every 15 Minutes,\" 2020, digital art, 2048px x 2048px. Part of a series of 9 square paintings that make up a larger \u201cPreventable Deaths\u201d square. \"Every 15 Minutes\" is a reminder in the form of a symbolic representation of a possible consequence of distracted driving.",
+                "image": "/static/Arts/Every 15 Minutes - Shirley Nguyen.png",
+                "video": ""
+            },
+            {
+                "desc": "\"Video Production Introduction,\" 2016, 2D animation. \"Video Production Introduction\" was created within a time constraint of 2 hours to open all the videos made by my high school video production program with character.",
+                "image": "",
+                "video": "https://youtube.com/embed/mFJ_dq-Z2uA"
+            },
+            {
+                "desc": "\"Topsy Turvy,\" 2020, origami. How far can you push a piece of paper? Topsy Turvy was created to show that you can push it as far as you can push perceptions of \u201cnormal\u201d by presenting flying fish and swimming birds.",
+                "image": "/static/Arts/IMG_1947 - Shirley Nguyen.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "danger",
+        "email": "hif2105@columbia.edu",
+        "first": "Hugo",
+        "last": "Favila",
+        "sample": [
+            {
+                "desc": "This sample work is a collection of my past CAD model projects. Clockwise from top left: toy dumping truck; rover descent lander; rover; original educational toy for helping children count up to 20.",
+                "image": "/static/Arts/Hugo Favila Sample Work 1 - Hugo Ivan Favila.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This sample work is a collage of black and white sketches that I hang above my bed. It is an amalgamation of space exploration vehicles (rocket, rover, and satellite) in relation to ours and other worlds.",
+                "image": "/static/Arts/Hugo Favila Sample Work 2 - Hugo Ivan Favila.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This sample work is collection of images taken during a Columbia Space Initiative event; in which I guided students in making straw rockets to teach them about rocketry.",
+                "image": "/static/Arts/Hugo Favila Sample Work 3 - Hugo Ivan Favila.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "sarai@naraimax.com",
+        "first": "Sarai",
+        "last": "Rankin",
+        "sample": [
+            {
+                "desc": "\"Overgrown and Underappreciated\" is an envirionment study of \"a memory of a place I have never been,\" which is to say, a greenhouse I visited in a dream. Done in Photoshop, I wanted to capture how fuzzy memories can be and how things change when left to their own devices.",
+                "image": "/static/Arts/overgrownandunderappreciated - Sarai Rankin.jpg",
+                "video": ""
+            },
+            {
+                "desc": "\"Daydream\" - a short film submitted to the Desert Lights Film Festival in 2018, which won an honorable mention. Each frame was drawn in Photoshop and FireAlpaca, and assembled in Final Cut Pro. Its inspriation is discussed in my essay prompts; \"Daydream\" is both a gift for my sister and a passion project of my own..",
+                "image": "",
+                "video": "https://youtube.com/embed/-h_FnhQ2Wc8"
+            },
+            {
+                "desc": "\"30 Days and 40 Lights\" is a neon sign piece made in Photoshop. I worked on for ten minutes a day, every week day, for a month. The idea of the exercise was to explore a new technique, and I chose to challange my typical use of color. I wanted the piece to pop out from the screen using high contrast colors and depth.",
+                "image": "/static/Arts/30 Days & 40 Lights - Sarai Rankin.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "email": "labortecamer@seattleu.edu",
+        "first": "Cameryn",
+        "last": "Laborte",
+        "sample": [
+            {
+                "desc": "\"BLM\"  Black Lives Matter decorated cookie created in response to Portland \u2018wall of moms\u2019 protest while sharing resources to support the Portland community.",
+                "image": "/static/Arts/65B4F84C-50B6-4A68-A50B-56853FB80745 - Cameryn Laborte.jpg",
+                "video": ""
+            },
+            {
+                "desc": "\u201cUlu Cookie and Cutter\u201d Custom Hawaiian quilt pattern 3D printed \u2018ulu\u2019 cutter and decorated gingerbread cookie.",
+                "image": "/static/Arts/IMG_3171 - Cameryn Laborte.jpg",
+                "video": ""
+            },
+            {
+                "desc": "\u201cSpace Set\u201d Various themed decorated cookies for a young space enthusiast\u2019s birthday.",
+                "image": "/static/Arts/IMG_3230 - Cameryn Laborte.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "primary",
+        "email": "joseliz.perez@upr.edu",
+        "first": "Joseliz",
+        "last": "Perez",
+        "sample": [
+            {
+                "desc": "I created a poster and build board to promote the brain awareness week from the association neuro-RUM.  ",
+                "image": "/static/Arts/Brain awarness week paper - JOSELIZ M PEREZ-ROVIRA.jpeg",
+                "video": ""
+            },
+            {
+                "desc": "I won second place in the 2017 Municipal of Legislature of Mayaguez Art Competition. It consisted of creating an art piece of an important event of one of the most important political figures in history of Puerto Rico",
+                "image": "/static/Arts/MLM Competition picture - JOSELIZ M PEREZ-ROVIRA.jpeg",
+                "video": ""
+            },
+            {
+                "desc": "Animations created for the NASA RASC-AL competition, (EMPRESS team)",
+                "image": "",
+                "video": "https://youtube.com/embed/exHoKhqeARs"
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "oneigon1@gmail.com",
+        "first": "Bianca",
+        "last": "Calipo",
+        "sample": [
+            {
+                "desc": "A class assignment, based on a photo reference of me climbing a tree to which I incorporated into this drawing. I wanted to include pokemon from my game as a fun fan art addition - Pokemon doesn't belong to me. This piece was drawn in Photoshop.",
+                "image": "/static/Arts/Pokemon Team 5 - Bianca C.png",
+                "video": ""
+            },
+            {
+                "desc": "Another class assignment, based on two characters of mine. I wanted this to be a colorful, light-hearted scene to reflect their interactions, while incorporating physical parts of my world-building. I used myself for photo reference, but not as directly as Sample #1.",
+                "image": "/static/Arts/Bianca_Calipo-Final Paint-DP-Edited - Bianca C.jpg",
+                "video": ""
+            },
+            {
+                "desc": "A 3D scene I made last semester incorporating a character of mine. He was modeled, textured, rigged, and posed in Blender, with some texture work done in Photoshop. I wanted to push myself in applying my 2D art style into the texture, and learning to rig. The Sketchfab link will allow you to inspect the scene closer and move freely within it.",
+                "image": "/static/Arts/Amias Render Sheet - Bianca C.png",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "dalope29@asu.edu",
+        "first": "Daniela",
+        "last": "Lopez",
+        "sample": [
+            {
+                "desc": "This was done with charcoal and conte. I included this piece because I did it right after hearing about this program.",
+                "image": "/static/Arts/IMG_7192 - Daniela Lopez.jpg",
+                "video": ""
+            },
+            {
+                "desc": "Entirely done with charcoal. I made this my sophomore year when I was an art major. It is the piece I was most proud of because I put in a lot of time and effort on it. It is special to me and I wanted to include it. ",
+                "image": "/static/Arts/IMG_7200 - Daniela Lopez.jpg",
+                "video": ""
+            },
+            {
+                "desc": "Made with wood, nails and string. I wanted to show that I am able to work with different media. It was a fun concept and I restarted it about 3 times until I got it just right. It took a long time to finish but I am proud of it. ",
+                "image": "/static/Arts/IMG_7204 - Daniela Lopez.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "medve048@umn.edu",
+        "first": "Mitchel",
+        "last": "Medvec",
+        "sample": [
+            {
+                "desc": "This is a multimedia mosaic on a 6x6 foot wooden board.  The portrayed image is the Psyche spacecraft arriving at the asteroid. Equipment used: ceramic tile, porcelain tile, glass, Styrofoam, packing peanuts, cement, silicone, grout, paint",
+                "image": "/static/Arts/Multimedia Mosaic - Mitchel Medvec.jpg",
+                "video": ""
+            },
+            {
+                "desc": "I wrote this song to portray the Ascension of the Apollo 11 rocket into space. The song and music video are totally original except for the Apollo 11 mission control audio in the beginning. I will include the link to the youtube video I got the audio from to avoid any copyright infringements: https://www.youtube.com/watch?v=fY02SoExbhs ",
+                "image": "",
+                "video": "https://www.youtube.com/embed/SER0_6FqDt8"
+            },
+            {
+                "desc": "This is a picture of me attempting to catch the comet NEOWISE.  ",
+                "image": "/static/Arts/Catching NEOWISE - Mitchel Medvec.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "zarinastudio@yahoo.com",
+        "first": "Zarina ",
+        "last": "Karapetyan",
+        "sample": [
+            {
+                "desc": "\u201cThe Cave\u201d is a sculpture made from Icelandic Basalt / Volcanic Rock, Icelandic Foliage, Icelandic Black Sand and Obsidian. I travelled to Iceland in 2019 to create work inspired by the energy and geology from the land of Ice and Fire. After studying and organizing the found materials, they were 3D scanned and scaled 10x their original size. ",
+                "image": "/static/Arts/closeup - Zarina Karapetyan.JPG",
+                "video": ""
+            },
+            {
+                "desc": "\u201cMeditation on Love, 1 hour, 1 minute, and 1 second.\u201d This piece was create with charcoal and a special solution of water directly after finishing a meditation on love, with the goal of applying this \u201cloving\u201d state or energy into the physical artwork. The final texture is reminiscent of our universe and the particles that float all around us.  ",
+                "image": "/static/Arts/lovemap - Zarina Karapetyan.png",
+                "video": ""
+            },
+            {
+                "desc": "\u201cThis Was You\u201d 36 x 48, Oil & Texture on canvas. The painting symbolically represents the union of two souls merging together, where your original cells begin to merge and form the first moments of you. The canvas mostly white, is focused in the center where the light spirals into a rainbow, representing your spirit emerging from the cosmic light. ",
+                "image": "/static/Arts/Untitled2-2 - Zarina Karapetyan.png",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "email": "kristine.chin@temple.edu",
+        "first": "Kristine",
+        "last": "Chin",
+        "sample": [
+            {
+                "desc": "This is an acrylic on canvas piece of the family hamster, Dumpling. His adoption birthday is in two weeks, and I painted this piece in celebration of the two years we had him so far.",
+                "image": "/static/Arts/Dumpling Painting - Kristine Chin.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This is an original short comic inked by hand and colored using Photoshop meant to be a fun way to educate students on the evolution of bony fish. Some artistic liberties were taken: as seen in this comic, one of the sharks, or cartilaginous fish, \u201cevolves\u201d to become a bony fish, leading to the punchline where another shark eats him.",
+                "image": "/static/Arts/Why Evolve Comic - Kristine Chin.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This is a short story I wrote for my close friend, after they came to me regarding their mental health issues. It has been shortened to fit the 1000 character limit, but it is still a very personal piece to me, as it was meant to show my friend that I am willing to stand by them and support them through their mental health journey.",
+                "image": "/static/Arts/Understanding - Kristine Chin.pdf",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "secondary",
+        "email": "joyce.wu@stonybrook.edu",
+        "first": "Joyce ",
+        "last": "Wu ",
+        "sample": [
+            {
+                "desc": "I resonate a lot with my astrological sign, Pisces, so I expressed my love by drawing two koi fish, in harmony, circling around each other with the Pisces symbol on their head. I provided a background with dark cool tones mixed with warm yellow tones to express the duality on Pisces members being dreamy, caring people yet extremely emotional. ",
+                "image": "/static/Arts/pisces - Joyce Wu.jpg",
+                "video": ""
+            },
+            {
+                "desc": "I recreated an extremely old photo of my father and I to celebrate Father's day using watercolors. This piece is emotional to me since we don't take that many photos anymore and I've kept his vintage jacket that is drawn. ",
+                "image": "/static/Arts/father'sday - Joyce Wu.jpg",
+                "video": ""
+            },
+            {
+                "desc": "Coronavirus stimulated a lot of people to be racist towards my ethnicity and race which affected me a lot. It provoked me to create this piece to show the side that glorifies our culture and the result of the coronavirus on the other side of the takeout box. ",
+                "image": "/static/Arts/takeoutbox - Joyce Wu.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "primary",
+        "email": "ewen.d@northeastern.edu",
+        "first": "David",
+        "last": "Ewen",
+        "sample": [
+            {
+                "desc": "Arlo, pictured in chalk on a chalkboard, is my yellow lab. Though patient when he needs to be, his fur in the summertime tends to act a lot like chalk: rubbing off when you touch it and sticking to every dark surface there is. Working with shadows and shading in a negative image is something I admire and strove to accomplish in this piece.",
+                "image": "/static/Arts/Arlo - David Ewen.jpg",
+                "video": ""
+            },
+            {
+                "desc": "Space is a huge inspiration for me, so I wanted to pay homage to it with my modelling skills, my 3D-printer, and acrylic. The cartoon rocket, modelled in SolidWorks, represents my childhood dream of blasting off on an interstellar adventure, and the moon and smoke, modelled in Blender, play with the wild hues that I would want to see on my journey.",
+                "image": "/static/Arts/Blast Off - David Ewen.jpg",
+                "video": ""
+            },
+            {
+                "desc": "I challenged myself to draw two perspectives each with only one pen line. I wanted to combine my love for coffee and its infatuating aroma with a subject that describes the shifts in perspectives between the two drawings, glasses. Though the scenes are made up of the same structure, one-line, each perspective dictates the scene\u2019s impact.",
+                "image": "/static/Arts/Single Perspectives - David Ewen.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "vmwashin@asu.edu",
+        "first": "Varissa ",
+        "last": " Washington",
+        "sample": [
+            {
+                "desc": "Misadventures of Boyhood is a mixed media oil painting, depicting puberty and the turmoil it brings. This work showcases my creativity, vibrant style, and innovation on what \u2018painting\u2019 can be. This piece features cardboard, clay, and pillow stuffing.",
+                "image": "/static/Arts/The_Misadventures_of_Boyhood - Varissa W..jpg",
+                "video": ""
+            },
+            {
+                "desc": "Figure in Red is an oil painting of a nude figure from a live session. I selected this painting to showcase my knowledge of the fundamentals of design, skill of the oil painting medium, and my ability to take inspiration from reality. ",
+                "image": "/static/Arts/Figure_In_Red - Varissa W..JPG",
+                "video": ""
+            },
+            {
+                "desc": "The Hunt is a mixed-media two panel painting that focuses on the boy scouts and its past history of sexual abuse. The piece features a utopian fantasy where a child, using his skills from the program can plan an attack on his offender. I selected it to showcase my ability to take complex information and use it to spread awareness in original ways.",
+                "image": "/static/Arts/The_Hunt - Varissa W..jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "jgonzal3z013@gmail.com",
+        "first": "Jacqueline ",
+        "last": "Gonzalez ",
+        "sample": [
+            {
+                "desc": "\u201cJupiter\u201d I utilized my understanding of color theory and interest in the planet to produce this painting.",
+                "image": "/static/Arts/520C87CF-6399-4655-A84C-EFCCED66FB64 - Jackie Gonzalez.jpeg",
+                "video": ""
+            },
+            {
+                "desc": "\u201cFeather\u201d an abstract rendition of a feather floating in the sky.",
+                "image": "/static/Arts/6F5697CB-577D-4089-B5DC-C2E9BC1EDD55 - Jackie Gonzalez.jpeg",
+                "video": ""
+            },
+            {
+                "desc": "Using shading to work through how the body is shaped wearing clothing.",
+                "image": "/static/Arts/F4344D89-D4FC-4D9C-A023-C2327B11EBE4 - Jackie Gonzalez.jpeg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "info",
+        "email": "rebeccapannell47@gmail.com",
+        "first": "Rebecca",
+        "last": "Pannell",
+        "sample": [
+            {
+                "desc": "This is an abstract piece that was meant to be really simple but ended up becoming one of my favorite pieces. The three planets create a path for your eyes to follow and and the colors compliment each other in a very pleasing way.  ",
+                "image": "/static/Arts/IMG_7809 - Rebecca Pannell.JPG",
+                "video": ""
+            },
+            {
+                "desc": "This is a self portrait I created as a way to practice my shading and light sources. I also used it to try and illustrate who I am as a person and planets and space are a huge part of my personality so naturally they became the secondary subject matter. ",
+                "image": "/static/Arts/Untitled_Artwork 3 - Rebecca Pannell.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This is a video of a Stirling Engine I made in my senior year of highschool. I was the first person to finish this project, so naturally my brain saw the giant hole in the side and immediately thought \"making this look like a shark would be awesome\". I love engineering because it's like adult arts and crafts and had so much fun with this project. ",
+                "image": "",
+                "video": "https://youtube.com/embed/03wQ0Dp-sPU"
+            }
+        ]
+    },
+    {
+        "color": "secondary",
+        "email": "allisonjocelyngu@gmail.com",
+        "first": "Allison",
+        "last": "Gu",
+        "sample": [
+            {
+                "desc": "This represents how no matter how dark and ugly our world is right now, space will always be full of wonder and life. It also shows that space exploration can serve as an escape for us right now. Like I described earlier, as someone with anxiety, quarantine has made me feel so trapped, but space is an escape for me.",
+                "image": "/static/Arts/IMG-1090 - Allison Gu.jpg",
+                "video": ""
+            },
+            {
+                "desc": "I love doing creative pieces, but I also love doing realistic drawings, and I wanted to show that side of my art as well! As stated above, I am a hard worker, and hard work leads to improvement, so I wanted to show my progress over the past few years!",
+                "image": "/static/Arts/IMG-1191 - Allison Gu.JPG",
+                "video": ""
+            },
+            {
+                "desc": "I also want to show my music! Since I can\u2019t perform in my community anymore due to COVID, I have been writing some of my own compositions and sharing them by putting them on YouTube in hopes that it can help brighten people\u2019s days!",
+                "image": "",
+                "video": "https://www.youtube.com/embed/N7nq_Vv3HWE"
+            }
+        ]
+    },
+    {
+        "color": "info",
+        "email": "tylernun@gmail.com",
+        "first": "Tyler Ann",
+        "last": "Nunley",
+        "sample": [
+            {
+                "desc": "Phoenix Down is a techno track I made under the pseudo name Black Mesas. The sound is influence by 80s/90s chiptune video games with 00s techno/pop. The title name came from an item from Final Fantasy. ",
+                "image": "",
+                "video": "https://player.vimeo.com/video/447048208"
+            },
+            {
+                "desc": "Spark! is a party card game where players choose four categories that involves with social issues. This project was part of Snap Design Academy. ",
+                "image": "/static/Arts/Spark! - Tyler Nunley.jpeg",
+                "video": ""
+            },
+            {
+                "desc": "Dark Room was my first solo art show and zine. The showcase is black and white photos of the Los Angeles local music scene from 2015-2017.",
+                "image": "/static/Arts/Dark Room - Tyler Nunley.jpeg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "primary",
+        "email": "jessicaflore@usf.edu",
+        "first": "Jessica",
+        "last": "Flores",
+        "sample": [
+            {
+                "desc": "This a character from a Japanese cartoon called My Hero Academia. The character depicted is Shoto Todoroki. Within this anime, he is a superhero that wields both fire and ice powers. This artwork is painted with acrylic paint on a 20 x 20\u201d canvas. ",
+                "image": "/static/Arts/Todoroki - Jessica Flores.jpeg",
+                "video": ""
+            },
+            {
+                "desc": "Within this graphite drawing, is Albert Einstein, a well-known physicist. This graphite artwork was drawn to highlight his signature facial features. This artwork is drawn with graphite on mixed-media paper. ",
+                "image": "/static/Arts/Albert Einstein - Jessica Flores.jpg",
+                "video": ""
+            },
+            {
+                "desc": "Depicted within this work is a Macaw parrot standing on its perch. The texture of the bird\u2019s feather and its perch was painted through the palette knife technique. This artwork is painted with acrylic paint on a 18 x 24\u201d poster paper. ",
+                "image": "/static/Arts/Parrot - Jessica Flores.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "maxrplata47@gmail.com",
+        "first": "Maxwell (Max)",
+        "last": "Plata",
+        "sample": [
+            {
+                "desc": "This is a brief cut from my original 10-minute play, \"To The Moon.\" \"To The Moon\" is about two childhood friends, Dust and Star, who have reconnected at a party after a falling out in high school. In this cut, Dust fumbles as he tries to cheer up Star with his knowledge of space cars.",
+                "image": "/static/Arts/To The Moon (Cut) - Maxwell Plata - Max Plata.pdf",
+                "video": ""
+            },
+            {
+                "desc": "This is a link to a short interactive narrative game I created using the Twine game engine, then published to my personal Itch.io page. The game is my first experiment with Twine, interactive storytelling, and coding. It takes approximately one minute to complete, but contains 11 separate routes/endings to choose from.",
+                "image": "",
+                "video": "https://kidicarus.itch.io/thirty-seconds"
+            },
+            {
+                "desc": "This is a found poem made up entirely of 20 anonymous entries to the \"missed connections\" section of Craigslist, localized to the Phoenix metro area. Each word and phrase in this poem belongs to someone else, but has been shaped by me into something resembling a love story.",
+                "image": "/static/Arts/NEVERGOTOVERYOU - Maxwell Plata - Max Plata.pdf",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "email": "jay.p.siri@gmail.com",
+        "first": "Jay",
+        "last": "Siri",
+        "sample": [
+            {
+                "desc": "\"Stories & Stars\" is meant to be taken as the first page to a novel about legacy and nature, hence the title. The watercolor is featured, but I've provided some context with the dialogue. It is in and of itself, a piece of art with text, but could very well be expanded into a longer work \u2014 I've left that for the reader to continue and consider. ",
+                "image": "/static/Arts/Stories & Stars - Jay Siri.png",
+                "video": ""
+            },
+            {
+                "desc": "\"The Face of War\" is also meant to be taken as the first page to a novel (similarly, in and of itself artwork that could be expanded on.) Both the feature watercolor and the text attempt to convey the destruction and loss of the Trojan War due to the bickering of higher powers \u2014 a metaphor for modern-day war too.",
+                "image": "/static/Arts/The Face of War - Jay Siri.png",
+                "video": ""
+            },
+            {
+                "desc": "Sadly, I couldn't upload the whole file (too large), but \"Donors\" is a twelve-page short story about freedom and cloning. I've just attached a formatted png of my 3 favorite pages here. Ideally, I'd like to create one storybook (~10 pages) of this style every quarter. If you're interested, you can find the whole story here: https://bit.ly/2XR6g1G",
+                "image": "/static/Arts/Donors - Jay Siri.png",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "ronchng@gmail.com",
+        "first": "Ronald",
+        "last": "Cheung",
+        "sample": [
+            {
+                "desc": "This drawing was a simple assignment from one of my engineering classes. \u201cDraw your shoe,\u201d they said. Unfamiliar with drawing, I wanted to apply myself and make something beyond my comfort zone. I sat down in my dorm and devoted myself to drawing my shoe as best I could. This piece represents my desire to learn and grow and the fruits of my effort.",
+                "image": "/static/Arts/Shoe Drawing - Ronald Cheung.jpg",
+                "video": ""
+            },
+            {
+                "desc": "When I first started learning this piece, it seemed like an insurmountable mountain compared to all the classical pieces I played beforehand. On my journey learning this piece, I had learnt beyond the sheet. The composition is my own take on a piece called \u201cUnravel.\u201d This piece represents my determination and progress in musical articulation.  ",
+                "image": "",
+                "video": "https://youtube.com/embed/NxccbKCXdho"
+            },
+            {
+                "desc": "In high school, we were tasked to make a design and mill it on a block. The orthogonal nature of the machine implied it simple design, but I wanted something more organic. Many issues rose in the program because of the shape while my peers finished theirs. I stayed hours after school and kept at it. This piece represents my vision and execution.",
+                "image": "/static/Arts/Block 12 - Ronald Cheung.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "info",
+        "email": "alga2144@colorado.edu",
+        "first": "Alison",
+        "last": "Garscadden",
+        "sample": [
+            {
+                "desc": "This piece is part of a series I did for my local planetarium. It is 2 out of the 5 panels. It is made with acrylic and UV reactive acrylic, so it glows under black light.",
+                "image": "/static/Arts/close to home fiske painting - Alison Garscadden.jpg",
+                "video": ""
+            },
+            {
+                "desc": "Moonrise is a commissioned painting, acrylic on a wooden door. ",
+                "image": "/static/Arts/Door painting - Alison Garscadden.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This spiral galaxy is acrylic on vinyl. I used reclaimed materials for this piece, old paints that people were going to throw out and an old water damaged vinyl.",
+                "image": "/static/Arts/Spiral galaxy on vinyl - Alison Garscadden.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "waheedah.akberzie.750@my.csun.edu",
+        "first": "Waheedah",
+        "last": "Akberzie",
+        "sample": [
+            {
+                "desc": "I was inspired by a friend of mine who was essentially a person who hated high school to a person who ended up becoming involved in physics research in one of the most famous labs in Berkeley where she gets to work with the shoulders of literal giants. I learned from her focus and expressed it into a haiku, hoping to learn from her journey. ",
+                "image": "/static/Arts/Greatness - Waheedah Akberzie.png",
+                "video": ""
+            },
+            {
+                "desc": "The clouds and the impending darkness represent the turbulence and turmoil that can come from external factors. These could be obstacles on one's path or journey. The candle light represents the one light used to navigate through said turmoil. ",
+                "image": "/static/Arts/Traditional Art - Waheedah Akberzie.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This is a picture of the moon taken in Moorpark College's Observatory. Even though this is a picture of the moon, I remember how I felt during that star party when I could see the moon so clearly. It felt like every concept I learned from math to astronomy to physics felt so real to me. It inspired me to continue my studies even further.  ",
+                "image": "/static/Arts/MC_Moon - Waheedah Akberzie.png",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "secondary",
+        "email": "raphaelledepuhl@miad.edu",
+        "first": "Raphaelle",
+        "last": "Depuhl",
+        "sample": [
+            {
+                "desc": "\u201cThe black riders\u201d is an 16x10 india ink dip pen illustration depicting the nine wraiths from the lord of the rings. ",
+                "image": "/static/Arts/depuhl the black riders 2019-Recovered - Raphaelle Depuhl.jpg",
+                "video": ""
+            },
+            {
+                "desc": "\u201cstorm chaser eagle\u201d is a 1x14 watercolor piece, one of two Magic the Gathering card redesigns I created for the student exhibition portion of the schools gallery collaboration with Wizards of the Cost. ",
+                "image": "/static/Arts/Depuhl-illustration-2021- two - Raphaelle Depuhl.jpg",
+                "video": ""
+            },
+            {
+                "desc": "\u201cniche partitioning in Wisconsin dryad saddles\u201d is a blend of traditional pencil sketching and digital media, created in my scientific illustration class to define and communicate the ecological concept of \u201cniche partitioning\u201d amongst the dryad saddle mushrooms of Wisconsin.",
+                "image": "/static/Arts/depuhl mushroom final - Raphaelle Depuhl.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "email": "prem.griddalur@gmail.com",
+        "first": "Prem",
+        "last": "Griddalur ",
+        "sample": [
+            {
+                "desc": "This is a sample image of my photography work. Inspired by the recent launch of the Mars Perseverence Rover, I created an abstract image depicting what it would look like to see Perseverance on Mars. I used a scale model of the rover as my subject and found a location in Colorado Springs that had soil that closely resembled the surface of Mars. ",
+                "image": "/static/Arts/IMG_1822-1 - Prem Griddalur.JPG",
+                "video": ""
+            },
+            {
+                "desc": "This is a sample image of my artwork. This is a pencil drawing of the character Bhallaladeva from the Indian film Baahubali. I found the character to be intriguing and decided to create a piece that accurately depicted his silent and cruel nature. ",
+                "image": "/static/Arts/IMG_0449_Original - Prem Griddalur.JPG",
+                "video": ""
+            },
+            {
+                "desc": "This is a sample of my engineering work involving my creative skills. I was tasked with designing a small racecar powered by an lego motor. I manufactured the chassis and wheels of the car using a lathe and mill. The car body was designed using CAD and then 3D Printed. Lastly, the car was detailed with a coat of paint. ",
+                "image": "/static/Arts/IMG_0914 - Prem Griddalur.JPG",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "info",
+        "email": "Z@ZUYVASEVILLA.COM",
+        "first": "Zuyva",
+        "last": "Sevilla",
+        "sample": [
+            {
+                "desc": "Angstrom, 2019, is a immersive VR and projection experience, placing the audience at a hypothetical nexus of potential. Different levels of immersion and control exist for the viewer in the headset and the audience in the projection-mapped room, lending to themes of the micro vs. macro, states of perception and near-impossible locations.",
+                "image": "",
+                "video": "https://player.vimeo.com/video/447175927/58114c9ada"
+            },
+            {
+                "desc": "3 balancing systems, 2020, is an extraction from a series of explorations delving into universal laws of motion, the chaos of uncertainty, and the natural balance state of forces. Each system abides by similar rules, but is individually imbued with different initial characteristics, theoretically creating infinite variations",
+                "image": "",
+                "video": "https://player.vimeo.com/video/447178136/71ca8dce89"
+            },
+            {
+                "desc": "Quintessence, 2018, is a projection-mapped, immersive polyhedral dome environment, playing on themes of ancient science, time, the celestial ether, and nested universes. Referencing ancient connections between geometry and the natural world, this environment was created as a liminal space between scales of perception within our universe. ",
+                "image": "",
+                "video": "https://player.vimeo.com/video/447042695"
+            }
+        ]
+    },
+    {
+        "color": "secondary",
+        "email": "brodski.a@northeastern.edu",
+        "first": "Avital",
+        "last": "Brodski",
+        "sample": [
+            {
+                "desc": "This is the title sequence for a former professor's documentary about Tijuana and immigration. I worked on this is 2019 and created all of the graphics and animations. The title has since changed, but my professor is still premiering his documentary with my work as the introductory sequence. ",
+                "image": "",
+                "video": "https://youtube.com/embed/snx9UrV8YXk"
+            },
+            {
+                "desc": "This is my most recent painting, in which I took a scene from Studio Ghibli's Howl's Moving Castle and painted it completely by eye on a 18x24 canvas. I am extremely proud of it as I put a lot of time and heart into it. I also modified some parts of the scene while still trying too keep it as true to the work as I could. ",
+                "image": "/static/Arts/IMG_1439 - Avital Brodski.jpg",
+                "video": ""
+            },
+            {
+                "desc": "I bleached, painted, drew on, and personalized this jacket. It was inspired by my favorite Japanese comic, and so I tried to mimic the feeling of a comic on the back. ",
+                "image": "/static/Arts/IMG_1446 - Avital Brodski.JPG",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "primary",
+        "email": "rachel.mills589@gmail.com",
+        "first": "Rachel",
+        "last": "Mills",
+        "sample": [
+            {
+                "desc": "This is my \"Diary of the planet Earth,\u201d so I can fondly remember the beauty and lessons I learned during this lifetime. It is a 5 x 3.5 \u201c notebook where I have decided to make memories into art and give them the attention and detail they deserve to have in my mind for years to come. The notebook is almost complete. These are a few samples",
+                "image": "/static/Arts/merge_from_ofoct (3) - Rachel Mills.jpg",
+                "video": ""
+            },
+            {
+                "desc": " Watercolor to me is the study of water and pigment. I mainly just use red, blue, and yellow paints and explore how I perceive color. While making this, I met someone whom I convinced to try watercolor. Although I have not encountered him since, I hope he has found as much satisfaction and personal growth through using them as I have.",
+                "image": "/static/Arts/IMG_0925 (2) - Rachel Mills.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This is my interpretation of the story, \u201cGreen Onions\u201d by Ry\u016bnosuke Akutagawa, which describes a girl who lives in a shabby apartment, her oasis of creativity and intellectualism, covered in writing and art. It is a manifestation of the inside of her mind and imagination. The story examines the optimism and romanticism of the world she has created.",
+                "image": "/static/Arts/IMG_0932 - Rachel Mills.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "email": "drewiebaggins@gmail.com",
+        "first": "Drew",
+        "last": "Newlin",
+        "sample": [
+            {
+                "desc": "An India ink painting of a man, done freehand without an outline",
+                "image": "/static/Arts/B50F304B-DEF8-494E-BA28-1948C7BC367D - Drew Newlin.JPG",
+                "video": ""
+            },
+            {
+                "desc": "An acrylic painting of a man in a hat",
+                "image": "/static/Arts/CCBFCD87-41C6-4A89-94C4-DAD10D17DD5A - Drew Newlin.png",
+                "video": ""
+            },
+            {
+                "desc": "An acrylic painting of the Virgin Mary as Our Lady of Sorrows",
+                "image": "/static/Arts/IMG_3296 2 - Drew Newlin.png",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "info",
+        "email": "kaashcro@asu.edu",
+        "first": "Kaitlyn",
+        "last": "Ashcroft",
+        "sample": [
+            {
+                "desc": "A magnificent nebula painted with acrylic that I painted and designed",
+                "image": "/static/Arts/IMG_20191104_230057244 - Kaitlyn Ashcroft.jpg",
+                "video": ""
+            },
+            {
+                "desc": "Humanity reaching for the stars and understanding more about themselves",
+                "image": "/static/Arts/IMG_20190809_091119120 - Kaitlyn Ashcroft.jpg",
+                "video": ""
+            },
+            {
+                "desc": "I constructed a dress and hat to represent the childhood dreams of being an astronaut princess.",
+                "image": "/static/Arts/IMG_20200811_184139617_HDR - Kaitlyn Ashcroft.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "dark",
+        "email": "Julia.Johnston@colorado.edu",
+        "first": "Julia",
+        "last": "Johnston",
+        "sample": [
+            {
+                "desc": "One of the things I find most beautiful about our moon is how the surface is peppered with craters. I wanted to take this idea and translate it artistically by drawing the moon only using a bunch of dots.",
+                "image": "/static/Arts/Lunar_Dots - Julia Johnston.pdf",
+                "video": ""
+            },
+            {
+                "desc": "This comic sums up my childhood vacations. My dad has a habit of packing up the family and then just driving somewhere, and getting lost in the process. While my dad never got so lost that we ended up in the outer reaches of our solar system, my mom has asked him the exact same question as drawn. ",
+                "image": "/static/Arts/We're_Lost - Julia Johnston.pdf",
+                "video": ""
+            },
+            {
+                "desc": "This is my artistic take on the pictures taken of Saturn by Cassini. I love how Saturn looks like a little ball that is simultaneously cloaked in warmth and darkness. I tried to draw Saturn to where it looks like you could reach out and grab it, while conveying that feeling of warmth and coldness. ",
+                "image": "/static/Arts/Saturn - Julia Johnston.pdf",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "kabaca1@asu.edu",
+        "first": "Karryn",
+        "last": "Baca ",
+        "sample": [
+            {
+                "desc": "This is probably one of my most favorite paintings I have done. I appreciate when I pay attention to close detail and my goal is to make it look like it\u2019s not even a painting. There\u2019s not too much of a story behind this, other than the fact that I love painting flowers, specifically roses.",
+                "image": "/static/Arts/Will You Accept This Rose - Karryn Baca.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This painting was for my dad. I wanted to paint something space related for him to hang up in his office (he works at an aerospace company) and I wanted blue to be the primary color. It also fit because the company\u2019s logo at that time was all blue. It was also winter themed because I knew I would be giving it to him around Christmas time. ",
+                "image": "/static/Arts/Beyond a Winter Night - Karryn Baca.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This blue jay brings back so many amazing camping memories I had growing up. I distinctively remember always seeing a blue jay whenever I went camping. It was always only one. The thought of it just brings a smile to my face. Who knew a single blue jay can bring back so many fond memories.  ",
+                "image": "/static/Arts/A Camping Memory - Karryn Baca.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "aithornh@asu.edu",
+        "first": "Alyssa",
+        "last": "Thornhill",
+        "sample": [
+            {
+                "desc": "This piece is for a scholarship I'm applying for. The assigned theme is modern farmhouse with floral details. I wanted to tie in my Arizona roots and myself into the piece, used photos I took around my neighborhood",
+                "image": "/static/Arts/scholarship - Alyssa Thornhill.png",
+                "video": ""
+            },
+            {
+                "desc": "This was for an assignment where I made a postcard for a place of my choosing in Illustrator. I chose Seven Falls which is a popular stop while hiking Sabino Canyon in Tucson, AZ. ",
+                "image": "/static/Arts/Thornhill_Final - Alyssa Thornhill.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This is a painting I did in my free time to practice portraits. Oil on paper. Wanted to focus on his wrinkles and the waves I noticed. I can paint more realistically but this was a stylistic choice ",
+                "image": "/static/Arts/IMG_20200507_212509 - Alyssa Thornhill.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "sophie.adams@colorado.edu",
+        "first": "Sophie",
+        "last": "Adams",
+        "sample": [
+            {
+                "desc": "Images were taken during the 2017 Solar Eclipse. I connected my DSLR camera to a telescope with a solar lens and took images every 5 minutes throughout the duration of the eclipse. The solar filter was taken off for totality. I compiled my images in this final composition in the hours after the eclipse.",
+                "image": "/static/Arts/Astrophotography_SophieAdams - Sophie Adams.jpg",
+                "video": ""
+            },
+            {
+                "desc": "\"Self Portrait\" was created in response to the gap of fashion-focused wearable technology. The jacket has four different looks; daytime indoors, sunlit outdoors, nighttime and nighttime party. The different looks are created through the use of UV activated pigments, glow in the dark pigments and fiber optic bunches connected to LEDs.",
+                "image": "/static/Arts/WearableTechnology_SophieAdams - Sophie Adams.jpg",
+                "video": ""
+            },
+            {
+                "desc": "\"Constellation Clock\" is an experimental clock that merges both new and traditional fabrication techniques. The LEDs have been coded to twinkle like stars when they are turned on. The clock was created as a wedding gift for my brother and sister-in-law. The scene and constellations were chosen in response to sentimental moments for the couple.",
+                "image": "/static/Arts/ElectronicEmbroidery_SophieAdams - Sophie Adams.jpg",
+                "video": "https://www.youtube.com/watch?time_continue=11&v=FBgGs-sasfg&feature=emb_logo"
+            }
+        ]
+    },
+    {
+        "color": "primary",
+        "email": "danielle.j.massey@lawrence.edu",
+        "first": "Danielle",
+        "last": "Massey",
+        "sample": [
+            {
+                "desc": "This piece is a t-shirt design for the university's Russian department. It takes inspiration from Slavic folk art. It reads Lawrence University in Russian. ",
+                "image": "/static/Arts/\u041b\u043e\u0440\u0435\u043d\u0441\u043a\u0438\u0439_\u0443.slavic.flower.shirt.design - Dani Massey.png",
+                "video": ""
+            },
+            {
+                "desc": "This piece was taken as journalistic photography for my university newspaper that I am a columnist and photographer for. It features a service dog in training looking up at his handler. The column is about diversity on campus, including this student who is a service dog trainer.",
+                "image": "/static/Arts/Anna & Willard the SDIT - Dani Massey.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This piece is a public service announcement that also serves as a poster for an event that my friend and I will be hosting in the future about Deaf and hard of hearing education. It is a prototype so I expect to make further edits before it would be posted for the event. ",
+                "image": "/static/Arts/D&HoH Festival Poster Prototype Official - Dani Massey.png",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "secondary",
+        "email": "squillace@email.arizona.edu",
+        "first": "Alessandra",
+        "last": "Squillace",
+        "sample": [
+            {
+                "desc": "When I was young I had a recurring nightmare: I was chased by a monster for hours, and it destroyed everything behind me. I realised I would never escape it, so I stopped and asked it to be my friend. Then the dream ended. For this piece of sci-fi flash fiction I wanted to grasp that sentiment: a horror setting that has the potential to be happy.",
+                "image": "/static/Arts/Exobiology - Alessandra Nicole Squillace.pdf",
+                "video": ""
+            },
+            {
+                "desc": "My family is from Italy, which is speckled with idyllic little lake-towns. In this piece I played with the image of a town which is too perfect to be comfortable, and is entirely devoid of specifics\u2014 there is a large building which might be a church, but no crosses are to be seen; the houses are all identical, and there are no signposts anywhere. ",
+                "image": "/static/Arts/The Lake Town - Alessandra Nicole Squillace.png",
+                "video": ""
+            },
+            {
+                "desc": "I\u2019m a huge medieval literature geek, and the Arthurian tradition holds a lot of fascination for me. In modern Arthurian fiction there\u2019s a trend of softening the characterization of Guinevere from a sharp, frequently morally ambiguous politician to a spring goddess archetype. This piece examines the dichotomy between modern and medieval Guinevere.",
+                "image": "/static/Arts/Commedia dell'arte - Alessandra Nicole Squillace.png",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "secondary",
+        "email": "Lfigueroa1@babson.edu",
+        "first": "Lucy",
+        "last": "Figueroa",
+        "sample": [
+            {
+                "desc": "This is one sheet from a coloring book I created full of fun facts about the ocean and its creatures, made specifically to raise awareness about how beautiful and expansive the ocean is. This was part of a project made with the purpose to encourage a younger audience to take care of our oceans and marine life. More awareness leads to greater care!",
+                "image": "/static/Arts/LucyFigueroaPsyche-01 - Lucy Figueroa.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This is one sheet from a coloring book I created full of fun facts about the ocean and its creatures, made specifically to raise awareness about how beautiful and expansive the ocean is. This was part of a project made with the purpose to encourage a younger audience to take care of our oceans and marine life. More awareness leads to greater care!",
+                "image": "/static/Arts/LucyFigueroaPsyche-02 - Lucy Figueroa.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This is one sheet from a coloring book I created full of fun facts about the ocean and its creatures, made specifically to raise awareness about how beautiful and expansive the ocean is. This was part of a project made with the purpose to encourage a younger audience to take care of our oceans and marine life. More awareness leads to greater care!",
+                "image": "/static/Arts/LucyFigueroaPsyche-03 - Lucy Figueroa.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "blbu4878@colorado.edu",
+        "first": "Blake",
+        "last": "Buxton",
+        "sample": [
+            {
+                "desc": "This is the cloud chamber particle detector I made for our display, as well as a zoom in on the sheet used to explain it, and pictures of particle tracks moving through it. I hope you enjoy! I take credit for the cloud chamber, and the graph description only, the display was a group contribution with all members mentioned at the top of the board.",
+                "image": "/static/Arts/IMG_7899 - Woody Buxton.JPG",
+                "video": ""
+            },
+            {
+                "desc": "This is a painting I recently did using Stuart Semple's \"Black 3.0\" paint, and a regular black acrylic paint to show the difference between the two paints. I also used a fluorescent paint in the center. ",
+                "image": "/static/Arts/IMG_7889 - Woody Buxton.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This was from a galaxy modular resin lamp I made last year. Unfortunately I do not have pictures of the full lamp currently due to the pandemic, however, each hexagon was 3d printed, with a galaxy inspired resin swirl. Each hexagon has a led light strip inside and they are a modular, custom lighted wall piece. This was from early on in the process.",
+                "image": "/static/Arts/IMG_5385 - Woody Buxton.JPG",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "secondary",
+        "email": "schwartg@usc.edu",
+        "first": "Grace",
+        "last": "Schwartz",
+        "sample": [
+            {
+                "desc": "I titled this work Cowboy in Color because the image is based on the album cover for Be The Cowboy by Mitski, but it features colors to represent the music's emotional range. This is hand embroidery on canvas with an acrylic orange outer border and a ribbon border a few mm in. There are various embellishments which relate to lyrics from the album. ",
+                "image": "/static/Arts/CowboyinColor - Grace Schwartz.jpg",
+                "video": ""
+            },
+            {
+                "desc": "This piece is Ode to Nostalgia. I made it while home for quarantine, and it's inspired by childhood crafts and an old I Spy book I found. It's an oversized, heart-shaped tote bag I sewed from denim with yellow satin lining and distressed patchwork straps. I screenprinted the I Spy logo on one side and made an eye from many googly eyes on the other.",
+                "image": "/static/Arts/OdetoNostalgia - Grace Schwartz.png",
+                "video": ""
+            },
+            {
+                "desc": "This painting is called Devilbiss Dog. I painted it a few months ago when my dog, Max, passed away. He was an incredibly important part of my life and helped me live through an abusive situation, so I painted this as a way to remember him. He was a rescue who was found near Devilbiss Hall at our local university. This piece is oil paint on canvas. ",
+                "image": "/static/Arts/DevilbissDog - Grace Schwartz.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "tchauck@asu.edu",
+        "first": "Tanner",
+        "last": "Hauck",
+        "sample": [
+            {
+                "desc": "https://tannerhauck.wordpress.com/psyche-inspired/",
+                "image": "/static/Arts/kawactus - Tanner Hauck.jpg",
+                "video": ""
+            },
+            {
+                "desc": "https://tannerhauck.wordpress.com/psyche-inspired/",
+                "image": "/static/Arts/iconicaustralia (1) - Tanner Hauck.jpg",
+                "video": ""
+            },
+            {
+                "desc": "https://tannerhauck.wordpress.com/psyche-inspired/",
+                "image": "/static/Arts/visionproject_haucktanner - Tanner Hauck.jpg",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "ruchi.ukhade@gmail.com",
+        "first": "Ruchi",
+        "last": "Ukhade",
+        "sample": [
+            {
+                "desc": "\"Chinese New Year\" (22x28 inch) is an ink drawing inspired by my father\u2019s trip to China. Living in Phoenix, I think most residents can confirm that they see desert-inspired paintings from local artists. The Chinese landscape is a good divergence from the normally seen. I want viewers to feel refreshed with a different view than normally seen.",
+                "image": "/static/Arts/Chinese New Year 22x28 - Ruchi Ukhade.JPG",
+                "video": ""
+            },
+            {
+                "desc": "\"Her Home\" (15x23 inch) follows a storyline about a girl who does not want to leave the security, beauty and companionship of her friends (the cats) and her home (the water). This story line describes the girl\u2019s struggle of leaving her home. This story is inspired from my own experiences of not wanting to grow up and leave my friends and home. ",
+                "image": "/static/Arts/Her Home 15x23 - Ruchi Ukhade.JPG",
+                "video": ""
+            },
+            {
+                "desc": "\"Iridescent Animals of the World\" (36x24 inches) is a painting on Vinyl, CDs, and Cassettes (electronic waste). This painting depicts the horrors of electronic waste on the environment. This piece won the silver award at the FCCLA State Competition. My objective in creating this piece is to encourage creative use of waste materials. ",
+                "image": "/static/Arts/Iridescent Animals of the World 36x24 - Ruchi Ukhade.JPG",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "secondary",
+        "email": "sindwani.tina@gmail.com",
+        "first": "Tina",
+        "last": "Sindwani",
+        "sample": [
+            {
+                "desc": "This is a picture taken from my really small Samsung phone about five years ago from the Empire State Building. It depicts New York's symbols: the high rise buildings, the yellow cabs, the small and crowded streets.",
+                "image": "/static/Arts/20150425_185026 - Tina Sindwani.jpg",
+                "video": ""
+            },
+            {
+                "desc": "The logo of The Scientific Teen. It shows a source of STEM information and the information propagating outward to everyone.",
+                "image": "/static/Arts/Neuron logo with name - Tina Sindwani.jpg",
+                "video": ""
+            },
+            {
+                "desc": "As I have always looked up to the stars, I found it very fitting that my first Instagram post be about the NEOWISE comet, which I chased for about two hours before finding its ethereal mother-of-pearl sheen. ",
+                "image": "/static/Arts/Capture89 - Tina Sindwani.PNG",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "secondary",
+        "email": "maya.probst1999@gmail.com",
+        "first": "Mayelin",
+        "last": "Probst",
+        "sample": [
+            {
+                "desc": "I chose this work because it represents what is going on now. The mask is because of Covid. The world is wearing it because it is everywhere. But the hands are supposed to show that we are supposed to be in this together not by tearing each other apart. But there is no race necessarily associated with the shading of the hands. ",
+                "image": "/static/Arts/EFAB18B5-289B-4194-A0BD-56A934AE595B - Maya Probst.jpeg",
+                "video": ""
+            },
+            {
+                "desc": "This video is based off a project I did in Intermedia. I chose this because it takes a bit to think about why I am reacting the way I am. It is a piece dedicated to the reason my birthmom died and why she gave me and my siblings up. The number of bottles represent the amount of years she was limited due to alcohol.",
+                "image": "",
+                "video": "https://youtube.com/embed/6vP0Dd5eaaI"
+            },
+            {
+                "desc": "This is a piece of written work I complied of information for students at ASU.",
+                "image": "/static/Arts/4E10FF43-D476-4107-AC37-E8F92B957CA6 - Maya Probst.png",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "success",
+        "email": "wertzcaleb@gmail.com",
+        "first": "Caleb",
+        "last": "Wertz",
+        "sample": [
+            {
+                "desc": "This is a poem about the electricity of the moment before the speaker opens up to a friend.",
+                "image": "/static/Arts/Wertz - Ode to the outline of your right ear - Caleb Wertz.pdf",
+                "video": ""
+            },
+            {
+                "desc": "This poem articulates the feelings of isolation that often accompany quarantine from the perspective of a dog who is trying to understand why they cannot enter the same room as their (sick) owner.",
+                "image": "/static/Arts/Wertz - haikus of a quarantined dog - Caleb Wertz.pdf",
+                "video": ""
+            },
+            {
+                "desc": "Ars poetica (literally translated to \u201cthe art of poetry\u201d) is a poem about poetry. The speaker, like many people, finds many poems intimidating or inaccessible, so they poke fun at the elitism with which some approach the genre of poetry. By doing so through a poem, the speaker ironically legitimizes the power of poetry.",
+                "image": "/static/Arts/Wertz - Ars Poetica - Caleb Wertz.pdf",
+                "video": ""
+            }
+        ]
+    },
+    {
+        "color": "warning",
+        "email": "imalpe@asu.edu",
+        "first": "Idika",
+        "last": "Malpe",
+        "sample": [
+            {
+                "desc": "My painting is a representation of humankind's influence and power on our Earth. The Avatar (the man in the middle) is a cyclic manifestation of the soul and represents the years humankind has spent on transforming the Earth as well as learning about space exploration and the planets and galaxy around us. ",
+                "image": "/static/Arts/IMG-7361 - Idika Malpe.jpg",
+                "video": ""
+            },
+            {
+                "desc": "I decided to write about a man who made his pipe dream real. I focused on the remorse he felt for not following his father\u2019s advice and the solace he found in following his dreams. This piece of writing is what I imagine how many immigrant kids feel when choosing their career path. ",
+                "image": "/static/Arts/NASA Psyche Written Portion - Idika Malpe.pdf",
+                "video": ""
+            },
+            {
+                "desc": " I used to do speech in high school and decided to utilize my expository skills to highlight a topic I am passionate about: the complexities of the film industry. I wanted to highlight the amount of influence the film corporation has on society and its importance to be and do better.",
+                "image": "",
+                "video": "https://www.youtube.com/embed/wUNtNHFBEPM"
             }
         ]
     }

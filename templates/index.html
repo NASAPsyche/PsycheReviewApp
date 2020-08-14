@@ -253,7 +253,7 @@ $('.view-sub').click(function(e) {
                 {% endif %}
                 {% if element['website']%}
                 <button class="btn btn-default modalImg" data-toggle="modal" data-target="#selectedImg">
-                    <img src="/static/image_not_found.png" class="card-img-top" alt="..." style="padding-top: 10px;">
+                    <img src="{{element['website-image']}}" class="card-img-top" alt="..." style="padding-top: 10px;">
                 </button>
                   <div class="card-body">
                     <h5 class="card-title">Artwork Description</h5>

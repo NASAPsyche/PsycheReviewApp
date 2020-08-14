@@ -723,19 +723,20 @@
                 "desc": " Tasked with designing housing for formerly homeless individuals, focused on homeless women. Homeless women are thought of as vulnerable, making them a target, 92% of homeless women report being physically & sexually abused in their lifetime. The design interprets these struggles this & through architecture attempts to promote empowerment of them.",
                 "image": "",
                 "video": "",
-                "website": "https://jaclyndoyle.myportfolio.com/can-you-see-me"
+                "website": "https://jaclyndoyle.myportfolio.com/can-you-see-me",
+                "website-image":"/static/Arts/JaclynDoyle - CanYouSeeMe - ConceptualModel.jpg"
             },
             {
                 "desc": "A translation through 2D & 3D space, through perspective & distortion, looking to find the truth between the image & the 3D. When presented with the first image, one would describe it as a desk, but as we move through space we realize that the first image given to us is a false sense of reality & actually the image does not match the 3D object.",
                 "image": "",
-                "video": "",
-                "website": "https://profetadaniele2.wixsite.com/indeterminate-2020/copy-of-bb-ale"
+                "video": "https://www.youtube.com/embed/kRsEfQZnLQ0"
             },
             {
                 "desc": "Tasked with designing a graft and bridge on Lincoln Road, the design gives a visual and physical connection between Soundscape Park and Lincoln Road. The building is made up of two completely separate objects that nest together cohesively. Creating a topological continuity in the skin that deviates to create the interior spaces",
                 "image": "",
                 "video": "",
-                "website": "https://jaclyndoyle.myportfolio.com/nestling-connections"
+                "website": "https://jaclyndoyle.myportfolio.com/nestling-connections",
+                "website-image":"/static/Arts/JaclynDoyle - NestlingConnections - StreetViewRender.jpg"
             }
         ]
     },
@@ -1168,7 +1169,8 @@
                 "desc": "This is a link to a short interactive narrative game I created using the Twine game engine, then published to my personal Itch.io page. The game is my first experiment with Twine, interactive storytelling, and coding. It takes approximately one minute to complete, but contains 11 separate routes/endings to choose from.",
                 "image": "",
                 "video": "",
-                "website":"https://kidicarus.itch.io/thirty-seconds"
+                "website":"https://kidicarus.itch.io/thirty-seconds",
+                "website-image":"/static/Arts/game.png"
             },
             {
                 "desc": "This is a found poem made up entirely of 20 anonymous entries to the \"missed connections\" section of Craigslist, localized to the Phoenix metro area. Each word and phrase in this poem belongs to someone else, but has been shaped by me into something resembling a love story.",
@@ -1324,12 +1326,12 @@
             {
                 "desc": "Angstrom, 2019, is a immersive VR and projection experience, placing the audience at a hypothetical nexus of potential. Different levels of immersion and control exist for the viewer in the headset and the audience in the projection-mapped room, lending to themes of the micro vs. macro, states of perception and near-impossible locations.",
                 "image": "",
-                "video": "https://vimeo.com/447175927/58114c9ada"
+                "video": "https://player.vimeo.com/video/447175927"
             },
             {
                 "desc": "3 balancing systems, 2020, is an extraction from a series of explorations delving into universal laws of motion, the chaos of uncertainty, and the natural balance state of forces. Each system abides by similar rules, but is individually imbued with different initial characteristics, theoretically creating infinite variations",
                 "image": "",
-                "video": "https://vimeo.com/447178136/71ca8dce89"
+                "video": "https://player.vimeo.com/video/447178136"
             },
             {
                 "desc": "Quintessence, 2018, is a projection-mapped, immersive polyhedral dome environment, playing on themes of ancient science, time, the celestial ether, and nested universes. Referencing ancient connections between geometry and the natural world, this environment was created as a liminal space between scales of perception within our universe. ",

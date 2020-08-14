@@ -1,3 +1,2 @@
-'Cassie Bowman': '["Aarti Patel"]'
-'Cassie Bowman': '["Kelly Jin", "Sam Hollasch"]'
-'Lindy Elkins-Tanton': '["Peter Chavez"]'
+'Rohit Singh': '["Idika Malpe"]'
+'Rohit Singh': '["Aarti Patel", "Aurelia Waller", "Xiwen (Julie) Hu"]'

@@ -7,9 +7,52 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"/>
+
+    <style>
+      #overlay-login {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        cursor: pointer;
+        /* background-image: url('/static/Arts/Todoroki - Jessica Flores.jpeg'); */
+      }
+
+      .vertical-center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+      }
+
+      </style>
+
 </head>
   <body> 
-    <header class="site-header">
+    <div id="overlay-login" class="bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 vertical-center">
+            <form class="">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Please enter your Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="input-group-append">
+                <button class="btn btn-dark" type="button" id="submit-password" onclick="off()">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="site-header">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success" style="">
         <div class="container">
           <a class="navbar-brand mr-4" href="/">Psyche Review App</a>
@@ -29,10 +72,28 @@
         </div>
       </nav>
     </header>
-    <div class="container">
+    <div class="container" id="main-content">  
     {% block body %}
     {% endblock %}
     </div>
+    <script>
+      document.getElementById("site-header").style.display = "none";
+      document.getElementById("main-content").style.display = "none";
+      function on() {
+        document.getElementById("overlay-login").style.display = "block";
+      }
+      
+      function off() {
+
+        var password = document.getElementById("exampleInputPassword1").value;
+
+        if(password=='psycheasu@2020'){
+          document.getElementById("site-header").style.display = "";
+          document.getElementById("main-content").style.display = "";
+          document.getElementById("overlay-login").style.display = "none";
+        }
+      }
+      </script>
     <script src="{{ url_for('static', filename='jquery-3.3.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='popper.min.js') }}"></script>
     <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>

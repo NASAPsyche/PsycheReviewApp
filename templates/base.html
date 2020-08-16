@@ -77,10 +77,26 @@
     {% endblock %}
     </div>
     <script>
-      document.getElementById("site-header").style.display = "none";
-      document.getElementById("main-content").style.display = "none";
-      function on() {
-        document.getElementById("overlay-login").style.display = "block";
+
+      var savedPassword = localStorage.getItem("savedPassword");
+
+      if(savedPassword=='psycheasu@2020'){
+          hideOverlay()
+      }else{
+        showOverlay()
+      }
+
+      
+      function hideOverlay(){
+          document.getElementById("site-header").style.display = "";
+          document.getElementById("main-content").style.display = "";
+          document.getElementById("overlay-login").style.display = "none";
+      }
+
+      function showOverlay(){
+        document.getElementById("site-header").style.display = "none";
+        document.getElementById("main-content").style.display = "none";
+        document.getElementById("overlay-login").style.display = "";
       }
       
       function off() {
@@ -88,11 +104,11 @@
         var password = document.getElementById("exampleInputPassword1").value;
 
         if(password=='psycheasu@2020'){
-          document.getElementById("site-header").style.display = "";
-          document.getElementById("main-content").style.display = "";
-          document.getElementById("overlay-login").style.display = "none";
+          localStorage.setItem("savedPassword", 'psycheasu@2020');
+          hideOverlay();
         }
       }
+
       </script>
     <script src="{{ url_for('static', filename='jquery-3.3.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='popper.min.js') }}"></script>

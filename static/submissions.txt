@@ -1,1 +1,2 @@
 'Rohit Singh': '["Aarti Patel"]'
+'Rohit Singh': '["Aarti Patel", "Aurelia Waller", "Xiwen (Julie) Hu"]'

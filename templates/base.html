@@ -43,6 +43,9 @@
               <p class="display-4 te">Psyche Review 2020</p>
               <div class="form-group">
                 <label for="exampleInputPassword1">Please enter your password</label>
+                <div id="errormessage" class="text-danger">
+
+                </div>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
               <div class="input-group-append">
@@ -108,6 +111,8 @@
         if(password=='psycheasu@2020'){
           localStorage.setItem("savedPassword", 'psycheasu@2020');
           hideOverlay();
+        }else{
+          document.getElementById('errormessage').innerHTML="Password is incorrect";  
         }
       }
 

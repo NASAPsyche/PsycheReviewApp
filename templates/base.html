@@ -90,6 +90,53 @@
 
         }
 
+        #spaceship{
+          height: 64px;
+            width: 64px;
+            position: relative;
+            left: 80%;
+            top: 50%;
+            animation: spaceship-animation 10s infinite forwards;
+
+        }
+
+        #meteroid{
+          height: 64px;
+            width: 64px;
+            position: relative;
+            left: 80%;
+            top: 10%;
+            animation: meteroid-animation 20s infinite forwards;
+
+        }
+
+        #trident{
+            height: 128px;
+            width: 190px;
+            position: relative;
+            top: 70%;
+            left: 400px;
+        }
+
+        @keyframes meteroid-animation {
+            0% {
+                    transform: translate3d(210px,50px,0px)
+                }
+                25% {
+                    transform: translate3d(300px,80px,100px)
+                }
+                50%{
+                    transform: translate3d(400px,100px,200px)
+                }
+                75%{ 
+                    transform: translate3d(600px,150px,100px)
+                }
+                100%{
+                    transform: translate3d(210px,50px,0px)
+                }
+        }
+
+
         @keyframes satelite-animation {
             /* from {left: 0%;}
             to {left: auto;} */
@@ -124,13 +171,31 @@
                     transform: translate3d(100px,0px,0px)
                 }
                 50%{
-                    transform: translate3d(200px,0px,0px)
+                    transform: translate3d(400px,0px,0px)
                 }
                 75%{ 
-                    transform: translate3d(300px,0px,0px)
+                    transform: translate3d(600px,0px,0px)
                 }
                 100%{
-                    transform: translate3d(400px,0px,0px)
+                    transform: translate3d(800px,0px,0px)
+                }
+            }
+
+            @keyframes spaceship-animation {
+                0% {
+                    transform: translate3d(0px,0px,0px)
+                }
+                25% {
+                    transform: translate3d(20px,20px,0px)
+                }
+                50%{
+                    transform: translate3d(-50px,-40px,0px)
+                }
+                75%{ 
+                    transform: translate3d(100px,-70px,0px)
+                }
+                100%{
+                  transform: translate3d(0px,0px,0px)
                 }
             }
 
@@ -167,6 +232,9 @@
           <div id="sprite-wrapper">
               <img id="satelite" src="/static/psyche.png"/>
               <img id="rover" src="/static/rover-25.png"/>
+              <img id="spaceship" src="/static/spaceship.png"/>
+              <img id="meteroid" src="/static/psyche-meteroid.png"/>
+              <img id="trident" src="/static/trident.png"/>
           </div>
           <div class="login-card col-6">
               <p class="lead">Psyche Review 2020</p>

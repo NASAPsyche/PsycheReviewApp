@@ -30,32 +30,157 @@
           transform: translateY(-50%);
       }
 
+
+      #background{
+            position: absolute;
+            height: 100%;
+            width: auto;
+        }
+
+        .login-card {
+            
+            border-radius: .25rem;
+            box-shadow: 0 1px 0 rgba(0,0,0,.25);
+            padding: 2rem 2rem 1rem;
+            margin: 0 auto 2rem;
+            position: relative;
+            border: 1px solid #ddd;
+            /* max-width: 29em; */
+            display: block;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            background-color: rgba(255,255,255,.9)
+
+        }
+
+        #page_contents {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 6rem 2rem;
+        }
+
+        #sprite-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #satelite{
+            height: 128px;
+            width: 128px;
+            position: relative;
+            left: 50%;
+            animation: satelite-animation 20s infinite forwards;
+        }
+
+        #rover{
+            height: 128px;
+            width: 128px;
+            position: relative;
+            top: 80%;
+            left: 0px;
+            animation: rover-animation 30s infinite forwards;
+
+        }
+
+        @keyframes satelite-animation {
+            /* from {left: 0%;}
+            to {left: auto;} */
+
+            /* 0% { top: 0; }
+            50% { top: 30px; left: 20px; }
+            50% { top: 10px; }
+            100% { top: 0; } */
+
+                0% {
+                    transform: translate3d(20px,20px,0px)
+                }
+                25% {
+                    transform: translate3d(300px,50px,100px)
+                }
+                50%{
+                    transform: translate3d(60px,100px,200px)
+                }
+                75%{ 
+                    transform: translate3d(100px,100px,100px)
+                }
+                100%{
+                    transform: translate3d(20px,20px,0px)
+                }
+            }
+        
+            @keyframes rover-animation {
+                0% {
+                    transform: translate3d(0px,0px,0px)
+                }
+                25% {
+                    transform: translate3d(100px,0px,0px)
+                }
+                50%{
+                    transform: translate3d(200px,0px,0px)
+                }
+                75%{ 
+                    transform: translate3d(300px,0px,0px)
+                }
+                100%{
+                    transform: translate3d(400px,0px,0px)
+                }
+            }
+
+
+            @media screen and (max-width : 1920px){
+                #small-background{
+                    visibility: hidden;
+                }
+            }
+            @media screen and (max-width : 906px){
+                
+                #background{
+                  display: none;
+                }
+
+                #sprite-wrapper{
+                  visibility: hidden;
+                }
+
+                #small-background{
+                  visibility: visible;
+                }
+            }
+
       </style>
 
 </head>
-  <body> 
-    <div id="overlay-login" style="display: none;">
-      <img src="/static/hero-home-bg.png" class="col-6"/>
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-6 vertical-center">
-            <div class="">
-              <p class="display-4">Psyche Review 2020</p>
+  <body style="margin-top: 0rem;"> 
+    
+    <div id="login-page" style="display: none;">
+      <div id="page-contents">
+          <img id="background" class="" src="/static/back2.jpg"/>
+          <img id="small-background" src="/static/hero-home-bg.png" class="col-6"/>
+          <div id="sprite-wrapper">
+              <img id="satelite" src="/static/psyche.png"/>
+              <img id="rover" src="/static/rover-25.png"/>
+          </div>
+          <div class="login-card col-6">
+              <p class="lead">Psyche Review 2020</p>
               <div class="form-group">
-                <label for="exampleInputPassword1">Please enter your password</label>
-                <div id="errormessage" class="text-danger">
-
-                </div>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <label for="exampleInputPassword1">Please enter your password</label>
+                  <div id="errormessage" class="text-danger"></div>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
               <div class="input-group-append">
-                <button class="btn btn-dark" type="button" id="submit-password" onclick="off()">Submit</button>
+                  <button class="btn btn-dark" type="button" id="submit-password" onclick="off()">Submit</button>
               </div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
 
     <header class="site-header" id="site-header" style="display: none;">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success" style="">
@@ -77,7 +202,7 @@
         </div>
       </nav>
     </header>
-    <div class="container" id="main-content" style="display: none;">  
+    <div class="container" id="main-content" style="display: none; margin-top: 5rem;">  
     {% block body %}
     {% endblock %}
     </div>
@@ -95,13 +220,13 @@
       function hideOverlay(){
           document.getElementById("site-header").style.display = "";
           document.getElementById("main-content").style.display = "";
-          document.getElementById("overlay-login").style.display = "none";
+          document.getElementById("login-page").style.display = "none";
       }
 
       function showOverlay(){
         document.getElementById("site-header").style.display = "none";
         document.getElementById("main-content").style.display = "none";
-        document.getElementById("overlay-login").style.display = "";
+        document.getElementById("login-page").style.display = "";
       }
       
       function off() {
